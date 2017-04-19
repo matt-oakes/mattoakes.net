@@ -24,12 +24,35 @@ const website = Metalsmith(__dirname)
     plugins: {
       'precss': {},
       'lost': {},
+      'postcss-typography': {
+        headerFontFamily: ['Unna', 'serif'],
+        headerWeight: '400',
+        bodyFontFamily: ['Arimo', 'Helvetica', 'Arial', 'sans-serif'],
+        scaleRatio: 3.75,
+        blockMarginBottom: 1/2,
+        includeNormalize: false
+      },
+      'postcss-font-magician': {
+        variants: {
+          'Unna': {
+            '400': []
+          },
+          'Arimo': {
+            '400': [],
+            '700': []
+          }
+        },
+        foundries: ['google']
+      },
       'autoprefixer': {}
     }
   }))
   // Concat all our CSS into one big file
   .use(concat({
-    files: 'styles/**/*.css',
+    files: [
+      'styles/base/**.css',
+      'styles/src/*.css'
+    ],
     output: 'styles.css'
   }))
   // Transpile markdown to HTML
@@ -52,7 +75,8 @@ switch (process.argv[2]) {
       .use (
         watch({
           paths: {
-            '${source}/**/*': true
+            '${source}/**/*': '${source}/**/*',
+            '${source}/../layouts/**/*': '${source}/**/*'
           },
           livereload: true
         })
