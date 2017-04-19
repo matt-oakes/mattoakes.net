@@ -4,8 +4,8 @@
   "description": "",
   "main": "build.js",
   "scripts": {
-    "start": "npm run develop",
-    "develop": "node index.js develop",
+    "start": "node serve.js",
+    "watch": "watch \"npm run build\" ./layouts ./src",
     "build": "node index.js build",
     "deploy": "node index.js deploy"
   },
@@ -13,6 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^6.7.7",
+    "connect-livereload": "^0.6.0",
+    "express": "^4.15.2",
     "handlebars": "^4.0.6",
     "lost": "^8.0.0",
     "metalsmith": "^2.3.0",
@@ -23,6 +25,8 @@
     "metalsmith-with-postcss": "^1.0.0",
     "postcss-font-magician": "^1.6.1",
     "postcss-typography": "beta",
-    "precss": "^1.4.0"
+    "precss": "^1.4.0",
+    "tiny-lr": "^1.0.3",
+    "watch": "^1.0.2"
   }
 }
