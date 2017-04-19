@@ -4,22 +4,22 @@
     lost-center: 980px;
 
     &-header {
-        lost-column: 1;
+        lost-column: 1/1;
         display: flex;
         align-items: center;
         justify-content: space-between;
 
-        h1 {
+        & h1 {
             display: inline-block;
         }
 
-        ul {
+        & ul {
             list-style-type: none;
 
-            li {
+            & li {
                 display: inline-block;
 
-                a {
+                & a {
                     font-family: Unna, serif;
                     font-weight: 400;
                     font-size: 1.2rem;

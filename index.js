@@ -1,6 +1,5 @@
 var Metalsmith = require('metalsmith')
 var postcss = require('metalsmith-with-postcss')
-var concat = require('metalsmith-concat')
 var layouts = require('metalsmith-layouts')
 var markdown = require('metalsmith-markdown')
 var permalinks = require('metalsmith-permalinks')
@@ -20,7 +19,9 @@ const website = Metalsmith(__dirname)
   // Process our CSS using PostCSS with a few plugins
   .use(postcss({
     plugins: {
-      'precss': {},
+      'postcss-import': {
+        root: __dirname + '/src/styles/styles.css'
+      },
       'lost': {},
       'postcss-typography': {
         baseFontSize: '20px',
@@ -43,17 +44,9 @@ const website = Metalsmith(__dirname)
         },
         foundries: ['google']
       },
-      'autoprefixer': {},
+      'postcss-cssnext': {},
       'cssnano': {}
     }
-  }))
-  // Concat all our CSS into one big file
-  .use(concat({
-    files: [
-      'styles/base/**.css',
-      'styles/src/*.css'
-    ],
-    output: 'styles.css'
   }))
   // Transpile markdown to HTML
   .use(markdown())
