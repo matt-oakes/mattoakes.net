@@ -23,11 +23,12 @@ const website = Metalsmith(__dirname)
       'precss': {},
       'lost': {},
       'postcss-typography': {
+        baseFontSize: '20px',
         headerFontFamily: ['Unna', 'serif'],
         headerWeight: '400',
         bodyFontFamily: ['Arimo', 'Helvetica', 'Arial', 'sans-serif'],
-        scaleRatio: 3.75,
-        blockMarginBottom: 1/2,
+        scaleRatio: 3,
+        blockMarginBottom: 1/4,
         includeNormalize: false
       },
       'postcss-font-magician': {
@@ -42,7 +43,8 @@ const website = Metalsmith(__dirname)
         },
         foundries: ['google']
       },
-      'autoprefixer': {}
+      'autoprefixer': {},
+      'cssnano': {}
     }
   }))
   // Concat all our CSS into one big file
