@@ -4,6 +4,7 @@ var postcss = require('metalsmith-with-postcss')
 var layouts = require('metalsmith-layouts')
 var hbtmd = require('metalsmith-hbt-md')
 var markdown = require('metalsmith-markdown')
+var favicons = require('metalsmith-favicons')
 var permalinks = require('metalsmith-permalinks')
 var picsetGenerate = require('metalsmith-picset-generate')
 var picsetHandlearsHelper = require('metalsmith-picset-handlebars-helper')
@@ -13,8 +14,18 @@ if (process.argv.length !== 3) {
   process.exit(-1)
 }
 
+const websiteName = 'Matt Oakes'
+const websiteDescription = 'Matt Oakes a mobile app developer in Brighton who helps companies with their mobile strategy and develops Android, iOS & React Native apps.'
+const websiteUrl = 'https://mattoakes.net/'
+
 // Configure the website build process using Metalsmith
 const website = Metalsmith(__dirname)
+  // Website metadata
+  .metadata({
+    sitename: websiteName,
+    siteurl: websiteUrl,
+    description: websiteDescription
+  })
   // Set the source and destinatation folders
   .source('./src')
   .destination('./build')
@@ -61,6 +72,25 @@ const website = Metalsmith(__dirname)
         pattern: '**/*.md'
     }))
   .use(markdown())
+  // Generate our favicons
+  .use(favicons({
+    src: '**/logo.jpg',
+    dest: 'favicons/',
+    appName: websiteName,
+    appDescription: websiteDescription,
+    icons: {
+      android: true,
+      appleIcon: true,
+      appleStartup: true,
+      coast: true,
+      favicons: true,
+      firefox: true,
+      opengraph: true,
+      twitter: true,
+      windows: true,
+      yandex: true
+    }
+  }))
   // Change URLs to permalinks
   .use(permalinks({
     relative: false

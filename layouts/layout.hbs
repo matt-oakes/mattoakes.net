@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>{{ title }}</title>
+  <title>{{ sitename }} - {{ title }}</title>
   <meta name="description" content="{{ description }}">
   <link rel="stylesheet" href="/styles/styles.css">
+  {{#each favicons.html}}
+    {{{ this }}}
+  {{/each}}
 </head>
 <body>
   <section id="page">
