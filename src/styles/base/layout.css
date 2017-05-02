@@ -2,6 +2,7 @@
 
 #page {
     lost-center: 980px;
+    margin-top: 3rem;
 
     &-header {
         lost-column: 1/1;

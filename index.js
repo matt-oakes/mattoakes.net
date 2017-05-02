@@ -25,6 +25,7 @@ const website = Metalsmith(__dirname)
       'lost': {},
       'postcss-typography': {
         baseFontSize: '20px',
+        baseLineHeight: 1.8,
         headerFontFamily: ['Unna', 'serif'],
         headerWeight: '400',
         bodyFontFamily: ['Arimo', 'Helvetica', 'Arial', 'sans-serif'],
