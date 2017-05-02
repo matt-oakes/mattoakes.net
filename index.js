@@ -6,7 +6,6 @@ var hbtmd = require('metalsmith-hbt-md')
 var markdown = require('metalsmith-markdown')
 var favicons = require('metalsmith-favicons')
 var twitterCard = require('metalsmith-twitter-card')
-var openGraph = require('metalsmith-open-graph')
 var permalinks = require('metalsmith-permalinks')
 var picsetGenerate = require('metalsmith-picset-generate')
 var picsetHandlearsHelper = require('metalsmith-picset-handlebars-helper')
@@ -101,12 +100,6 @@ const website = Metalsmith(__dirname)
     siteurl: websiteUrlNoProtocol,
     card: 'summary',
     site: '@mattdoesmobile',
-    title: websiteName,
-    description: websiteDescription
-  }))
-  // Add in open graph data
-  .use(openGraph({
-    siteurl: websiteUrl,
     title: websiteName,
     description: websiteDescription
   }))

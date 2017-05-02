@@ -1780,13 +1780,6 @@ metalsmith-markdown@^0.2.1:
     debug "~0.7.4"
     marked "~0.3.1"
 
-metalsmith-open-graph@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/metalsmith-open-graph/-/metalsmith-open-graph-0.0.4.tgz#9331fb217bc54c974127f41cddac87f4c7c7065e"
-  dependencies:
-    cheerio "^0.22.0"
-    minimatch "^3.0.3"
-
 metalsmith-permalinks@^0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/metalsmith-permalinks/-/metalsmith-permalinks-0.5.0.tgz#0fec5b1f0687828c198d33b5d479cc1cec4b1a1f"
@@ -1874,7 +1867,7 @@ min-document@^2.19.0:
   dependencies:
     dom-walk "^0.1.0"
 
-minimatch@3.0.3, minimatch@^3.0.2, minimatch@^3.0.3:
+minimatch@3.0.3, minimatch@^3.0.2:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.3.tgz#2a4e4090b96b2db06a9d7df01055a62a77c9b774"
   dependencies:

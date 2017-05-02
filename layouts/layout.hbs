@@ -8,6 +8,9 @@
   {{#each favicons.html}}
     {{{ this }}}
   {{/each}}
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ sitename }} - {{ title }}">
+  <meta property="og:description" content="{{ description }}">
 </head>
 <body>
   <section id="page">
