@@ -44,6 +44,7 @@ var buildWebsite = function buildWebsite (file) {
       console.log('Error while building:\n' + err)
     } else {
       livereloadServer.changed({ body: { files: [ file ] } })
+      console.log(stdout)
       console.log('Done building!')
     }
 

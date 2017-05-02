@@ -1,5 +1,5 @@
 ---
-layout: layout.html
+layout: layout.hbs
 ---
 
 <div id="index">
@@ -84,7 +84,12 @@ layout: layout.html
     <section id="why-me" class="index-section">
         <header>
             <h2>Why me?</h2>
-            <p>Many developers could build you <em>an</em> app, however, I will work hard to ensure I build you <em>the perfect</em> app. From the very start of the process, I will ensure I understand your business goals and the needs of your users. I can then use my experience with both the Android & iOS platforms to build and improve your mobile apps in a way which will delight your users and provide you a great return on your investment. All through the process I will work with three goals in mind: achieving your business goals, fulfilling your user's needs, and crafting a solid app which can be improved and built upon in the future.</p>
+            <div class="row">
+                <p>Many developers could build you <em>an</em> app, however, I will work hard to ensure I build you <em>the perfect</em> app. From the very start of the process, I will ensure I understand your business goals and the needs of your users. I can then use my experience with both the Android & iOS platforms to build and improve your mobile apps in a way which will delight your users and provide you a great return on your investment. All through the process I will work with three goals in mind: achieving your business goals, fulfilling your user's needs, and crafting a solid app which can be improved and built upon in the future.</p>
+                <div id="profile-picture">
+                    {{{picset "profile-picture" 600}}}
+                </div>
+            </div>
         </header>
         <div class="row">
             <div id="business-goals" class="me-trait">

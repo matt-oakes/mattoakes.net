@@ -1,8 +1,12 @@
 var Metalsmith = require('metalsmith')
+var handlebars = require('handlebars')
 var postcss = require('metalsmith-with-postcss')
 var layouts = require('metalsmith-layouts')
+var hbtmd = require('metalsmith-hbt-md')
 var markdown = require('metalsmith-markdown')
 var permalinks = require('metalsmith-permalinks')
+var picsetGenerate = require('metalsmith-picset-generate')
+var picsetHandlearsHelper = require('metalsmith-picset-handlebars-helper')
 
 if (process.argv.length !== 3) {
   console.error('Error: You must provide an action. One of "build" or "deploy".')
@@ -49,7 +53,13 @@ const website = Metalsmith(__dirname)
       'cssnano': {}
     }
   }))
-  // Transpile markdown to HTML
+  // Generate and use the picsets
+  .use(picsetGenerate())
+  .use(picsetHandlearsHelper())
+  // Transpile markdown to HTML with handlebars support
+  .use(hbtmd(handlebars, {
+        pattern: '**/*.md'
+    }))
   .use(markdown())
   // Change URLs to permalinks
   .use(permalinks({
