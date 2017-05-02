@@ -48,7 +48,7 @@ twitter: true
                 <p>Working directly with the amazing team of at Filmstro, I created an iPhone app to adds dynamic soundtracks to peoples video moments, creating the soundtrack to their life.</p>
                 <div class="button">
                     <a href="#">Read the case study</a>
-                    <a href="#">Download the app</a>
+                    <a href="https://itunes.apple.com/gb/app/filmstro-create-soundtrack/id1159676415">Download the app</a>
                 </div>
             </div>
             <div id="google-playbook" class="work-entry">
@@ -56,7 +56,7 @@ twitter: true
                 <h3>Playbook by Google Play</h3>
                 <p>Playbook by Google Play launched at Google I/O 2016. I worked on this project while at <a href="http://ribot.co.uk/work/google-playbook">ribot</a> as an native Android developer, backend developer, and project manager.</p>
                 <div class="button">
-                    <a href="#">Download the app</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.secrets">Download the app</a>
                 </div>
             </div>
         </div>
@@ -66,7 +66,7 @@ twitter: true
                 <h3>Easyfundraising for iOS</h3>
                 <p>Easyfundraising help customers raise money for good causes by shopping. I worked on this native iOS app at <a href="http://ribot.co.uk/work/easyfundraising">ribot</a> and, as of January 2016, there has been £17m spent through the app.</p>
                 <div class="button">
-                    <a href="#">Download the app</a>
+                    <a href="https://itunes.apple.com/gb/app/easyfundraising/id915474725">Download the app</a>
                 </div>
             </div>
             <div id="mgemi" class="work-entry">
@@ -74,7 +74,7 @@ twitter: true
                 <h3>M.Gemi for iPhone</h3>
                 <p>M.Gemi produces stunning handcrafted shoes at historically impossible prices. I worked on this app while at <a href="http://ribot.co.uk/work/m-gemi">ribot</a>. The iPhone app is the highest converting sales channel for M.Gemi.</p>
                 <div class="button">
-                    <a href="#">Download the app</a>
+                    <a href="https://itunes.apple.com/us/app/m.gemi-italian-shoes.-handmade./id972695290">Download the app (US only)</a>
                 </div>
             </div>
         </div>
