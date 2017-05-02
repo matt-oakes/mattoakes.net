@@ -1,5 +1,17 @@
+/* Reset styles */
 @import "normalize.css";
+
+/* Base variables */
+@import "base/variables.css";
+
+/* Base text styles */
 @import "base/typography.css";
+
+/* Shared components */
+@import "base/buttons.css";
+
+/* Global page layouts */
 @import "base/layout.css";
 
+/* Individual page styles */
 @import "src/index.css";

@@ -1,0 +1,28 @@
+.button {
+    lost-align: center;
+    margin-bottom: 0.45rem;
+
+    & a {
+        display: block;
+        border: 2px solid var(--brandColor);
+        background-color: transparent;
+        padding: 0.75rem 1.5rem;
+
+        font-size: 1rem;
+        color: var(--brandColor);
+        font-family: var(--headerFontFamily);
+        text-decoration: none;
+        text-align: center;
+
+        transition: background-color 0.25s, color 0.25s;
+
+        &:not(:first-child) {
+            margin-left: 1rem;
+        }
+
+        &:hover {
+            background-color: var(--brandColor);
+            color: white;
+        }
+    }
+}
