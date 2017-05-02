@@ -41,6 +41,7 @@ layout: layout.hbs
         </header>
         <div class="row">
             <div id="filmstro" class="work-entry">
+                {{{picset "filmstro" 1000}}}
                 <h3>Filmstro for iPhone</h3>
                 <p>Working directly with the amazing team of at Filmstro, I created an iPhone app to adds dynamic soundtracks to peoples video moments, creating the soundtrack to their life.</p>
                 <div class="button">
@@ -49,6 +50,7 @@ layout: layout.hbs
                 </div>
             </div>
             <div id="google-playbook" class="work-entry">
+                {{{picset "google-playbook" 1000}}}
                 <h3>Playbook by Google Play</h3>
                 <p>Playbook by Google Play launched at Google I/O 2016. I worked on this project while at <a href="http://ribot.co.uk/work/google-playbook">ribot</a> as an native Android developer, backend developer, and project manager.</p>
                 <div class="button">
@@ -58,6 +60,7 @@ layout: layout.hbs
         </div>
         <div class="row">
             <div id="easyfundraising" class="work-entry">
+                {{{picset "easyfundraising" 600}}}
                 <h3>Easyfundraising for iOS</h3>
                 <p>Easyfundraising help customers raise money for good causes by shopping. I worked on this native iOS app at <a href="http://ribot.co.uk/work/easyfundraising">ribot</a> and, as of January 2016, there has been £17m spent through the app.</p>
                 <div class="button">
@@ -65,6 +68,7 @@ layout: layout.hbs
                 </div>
             </div>
             <div id="mgemi" class="work-entry">
+                {{{picset "mgemi" 1000}}}
                 <h3>M.Gemi for iPhone</h3>
                 <p>M.Gemi produces stunning handcrafted shoes at historically impossible prices. I worked on this app while at <a href="http://ribot.co.uk/work/m-gemi">ribot</a>. The iPhone app is the highest converting sales channel for M.Gemi.</p>
                 <div class="button">
