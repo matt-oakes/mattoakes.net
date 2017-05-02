@@ -5,6 +5,8 @@ var layouts = require('metalsmith-layouts')
 var hbtmd = require('metalsmith-hbt-md')
 var markdown = require('metalsmith-markdown')
 var favicons = require('metalsmith-favicons')
+var twitterCard = require('metalsmith-twitter-card')
+var openGraph = require('metalsmith-open-graph')
 var permalinks = require('metalsmith-permalinks')
 var picsetGenerate = require('metalsmith-picset-generate')
 var picsetHandlearsHelper = require('metalsmith-picset-handlebars-helper')
@@ -17,6 +19,7 @@ if (process.argv.length !== 3) {
 const websiteName = 'Matt Oakes'
 const websiteDescription = 'Matt Oakes a mobile app developer in Brighton who helps companies with their mobile strategy and develops Android, iOS & React Native apps.'
 const websiteUrl = 'https://mattoakes.net/'
+const websiteUrlNoProtocol = 'mattoakes.net'
 
 // Configure the website build process using Metalsmith
 const website = Metalsmith(__dirname)
@@ -81,14 +84,8 @@ const website = Metalsmith(__dirname)
     icons: {
       android: true,
       appleIcon: true,
-      appleStartup: true,
-      coast: true,
       favicons: true,
-      firefox: true,
-      opengraph: true,
-      twitter: true,
-      windows: true,
-      yandex: true
+      firefox: true
     }
   }))
   // Change URLs to permalinks
@@ -98,6 +95,20 @@ const website = Metalsmith(__dirname)
   // Wrap layouts around HTML pages
   .use(layouts({
     engine: 'handlebars'
+  }))
+  // Add in Twitter cards. These can be overridden in each page
+  .use(twitterCard({
+    siteurl: websiteUrlNoProtocol,
+    card: 'summary',
+    site: '@mattdoesmobile',
+    title: websiteName,
+    description: websiteDescription
+  }))
+  // Add in open graph data
+  .use(openGraph({
+    siteurl: websiteUrl,
+    title: websiteName,
+    description: websiteDescription
   }))
 
 // Perform the final actions depending on what action has been asked for

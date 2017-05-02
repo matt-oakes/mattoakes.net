@@ -1,6 +1,7 @@
 ---
-title: Android, iOS &amp; React Native App Developer in Brighton &amp; London
+title: Android, iOS & React Native App Developer in Brighton & London
 layout: layout.hbs
+twitter: true
 ---
 
 <div id="index">
