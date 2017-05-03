@@ -1,4 +1,5 @@
 var Metalsmith = require('metalsmith')
+var fingerprint = require('metalsmith-fingerprint')
 var handlebars = require('handlebars')
 var postcss = require('metalsmith-with-postcss')
 var layouts = require('metalsmith-layouts')
@@ -76,6 +77,21 @@ const website = Metalsmith(__dirname)
   // Generate and use the picsets
   .use(picsetGenerate())
   .use(picsetHandlearsHelper())
+  // Fingerprint our CSS and images
+  .use(fingerprint({
+    pattern: [
+      'styles/styles.css',
+      'img/**/*'
+    ]
+  }))
+  // Setup a handlbars helper to modify the picset html
+  .use(function (files, metalsmith, done) {
+    var imageRegex = /img\/picset\/.*?\.(jpg|png|webp)/g
+    handlebars.registerHelper('fingerprint-picset', (html) => {
+      return html.replace(imageRegex, (match) => metalsmith.metadata().fingerprint[match])
+    })
+    return process.nextTick(done)
+  })
   // Transpile markdown to HTML with handlebars support
   .use(hbtmd(handlebars, {
         pattern: '**/*.md'

@@ -43,7 +43,7 @@ twitter: true
         </header>
         <div class="row">
             <div id="filmstro" class="work-entry">
-                {{{picset "filmstro" 1000}}}
+                {{{ fingerprint-picset (picset "filmstro" 1000 "(min-width: 900px) calc(900px / 2), 100vw" "Filmstro iPhone screenshots") }}}
                 <h3>Filmstro for iPhone</h3>
                 <p>Working directly with the amazing team of at Filmstro, I created an iPhone app to adds dynamic soundtracks to peoples video moments, creating the soundtrack to their life.</p>
                 <div class="buttons">
@@ -52,7 +52,7 @@ twitter: true
                 </div>
             </div>
             <div id="google-playbook" class="work-entry">
-                {{{picset "google-playbook" 1000}}}
+                {{{ fingerprint-picset (picset "google-playbook" 1000 "(min-width: 900px) calc(900px / 2), 100vw" "Google Playbook screenshots") }}}
                 <h3>Playbook by Google Play</h3>
                 <p>Playbook by Google Play launched at Google I/O 2016. I worked on this project while at <a href="http://ribot.co.uk/work/google-playbook">ribot</a> as an native Android developer, backend developer, and project manager.</p>
                 <div class="buttons">
@@ -62,7 +62,7 @@ twitter: true
         </div>
         <div class="row">
             <div id="easyfundraising" class="work-entry">
-                {{{picset "easyfundraising" 600}}}
+                {{{ fingerprint-picset (picset "easyfundraising" 600 "(min-width: 900px) calc(900px / 2), 100vw" "Easyfundraising screenshots") }}}
                 <h3>Easyfundraising for iOS</h3>
                 <p>Easyfundraising help customers raise money for good causes by shopping. I worked on this native iOS app at <a href="http://ribot.co.uk/work/easyfundraising">ribot</a> and, as of January 2016, there has been £17m spent through the app.</p>
                 <div class="buttons">
@@ -70,7 +70,7 @@ twitter: true
                 </div>
             </div>
             <div id="mgemi" class="work-entry">
-                {{{picset "mgemi" 1000}}}
+                {{{ fingerprint-picset (picset "mgemi" 1000 "(min-width: 900px) calc(900px / 2), 100vw" "Mgemi iOS screenshots") }}}
                 <h3>M.Gemi for iPhone</h3>
                 <p>M.Gemi produces stunning handcrafted shoes at historically impossible prices. I worked on this app while at <a href="http://ribot.co.uk/work/m-gemi">ribot</a>. The iPhone app is the highest converting sales channel for M.Gemi.</p>
                 <div class="buttons">
@@ -93,7 +93,7 @@ twitter: true
             <div class="row">
                 <p>Many developers could build you <em>an</em> app, however, I will work hard to ensure I build you <em>the perfect</em> app. From the very start of the process, I will ensure I understand your business goals and the needs of your users. I can then use my experience with both the Android & iOS platforms to build and improve your mobile apps in a way which will delight your users and provide you a great return on your investment. All through the process I will work with three goals in mind: achieving your business goals, fulfilling your user's needs, and crafting a solid app which can be improved and built upon in the future.</p>
                 <div id="profile-picture">
-                    {{{picset "profile-picture" 600}}}
+                    {{{ fingerprint-picset (picset "profile-picture" 600 "(min-width: 900px) calc(900px / 3), 100vw" "Matt Oakes") }}}
                 </div>
             </div>
         </header>

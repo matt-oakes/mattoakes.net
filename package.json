@@ -22,6 +22,7 @@
     "metalsmith": "^2.3.0",
     "metalsmith-cloudfront": "^0.0.3",
     "metalsmith-favicons": "^1.0.0",
+    "metalsmith-fingerprint": "^1.0.3",
     "metalsmith-hbt-md": "^1.0.1",
     "metalsmith-html-minifier": "^2.2.0",
     "metalsmith-layouts": "^1.8.0",

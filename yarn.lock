@@ -1830,6 +1830,12 @@ metalsmith-favicons@^1.0.0:
   dependencies:
     favicons "^4.8.3"
 
+metalsmith-fingerprint@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/metalsmith-fingerprint/-/metalsmith-fingerprint-1.0.3.tgz#91c6d5ad1245d594dff2341b55963ea49a1eb6f8"
+  dependencies:
+    multimatch "^2.0.0"
+
 metalsmith-hbt-md@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/metalsmith-hbt-md/-/metalsmith-hbt-md-1.0.1.tgz#cd4062abe8f0405b97d928dbe54f890c8e2bd84c"
