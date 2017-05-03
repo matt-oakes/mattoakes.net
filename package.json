@@ -5,6 +5,7 @@
   "main": "build.js",
   "scripts": {
     "start": "node serve.js",
+    "test": "echo \"No tests yet\"",
     "watch": "watch \"npm run build\" ./layouts ./src",
     "build": "node index.js build",
     "deploy": "node index.js deploy"
