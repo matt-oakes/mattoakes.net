@@ -8,6 +8,7 @@
 @import "base/typography.css";
 
 /* Shared components */
+@import "base/links.css";
 @import "base/buttons.css";
 
 /* Global page layouts */
