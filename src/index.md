@@ -1,5 +1,5 @@
 ---
-title: Android, iOS & React Native App Developer in Brighton & London
+title: Android, iOS & React Native App Developer in Brighton & London — Matt Oakes
 layout: layout.hbs
 twitter: true
 ---
