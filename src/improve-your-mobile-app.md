@@ -25,7 +25,7 @@ twitter: true
     <section class="service-section service-contact">
         <p>Ready to improve your mobile app?</p>
         <div class="buttons">
-            <div class="button"><a href="contact">Contact me</a></div>
+            <div class="button"><a href="/contact/">Contact me</a></div>
         </div>
     </section>
 </div>
