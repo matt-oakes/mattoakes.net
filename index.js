@@ -70,7 +70,8 @@ const website = Metalsmith(__dirname)
       },
       'postcss-cssnext': {},
       'cssnano': {}
-    }
+    },
+    map: false
   }))
   // Generate and use the picsets
   .use(picsetGenerate())
