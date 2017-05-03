@@ -11,7 +11,7 @@ var permalinks = require('metalsmith-permalinks')
 var picsetGenerate = require('metalsmith-picset-generate')
 var picsetHandlearsHelper = require('metalsmith-picset-handlebars-helper')
 var htmlMinifier = require("metalsmith-html-minifier")
-var s3 = require('metalsmith-s3')
+var s3 = require('./s3')
 var cloudfront = require('metalsmith-cloudfront')
 
 if (process.argv.length !== 3) {
