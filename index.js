@@ -9,11 +9,16 @@ var twitterCard = require('metalsmith-twitter-card')
 var permalinks = require('metalsmith-permalinks')
 var picsetGenerate = require('metalsmith-picset-generate')
 var picsetHandlearsHelper = require('metalsmith-picset-handlebars-helper')
+var s3 = require('metalsmith-s3')
+var cloudfront = require('metalsmith-cloudfront')
 
 if (process.argv.length !== 3) {
   console.error('Error: You must provide an action. One of "build" or "deploy".')
   process.exit(-1)
 }
+
+// Load the .env variables
+require('dotenv').config()
 
 const websiteName = 'Matt Oakes'
 const websiteDescription = 'Matt Oakes a mobile app developer in Brighton who helps companies with their mobile strategy and develops Android, iOS & React Native apps.'
@@ -115,9 +120,20 @@ switch (process.argv[2]) {
     break
   // Build the website and then deploy it
   case 'deploy':
-    // TODO: Deploy to S3
-    console.error('Error: "deploy" action is not currently implemented.')
-    process.exit(-1)
+    website
+      .use(s3({
+        action: 'write',
+        bucket: process.env.AWS_S3_BUCKET
+      }))
+      .use(cloudfront({
+        dist: process.env.AWS_CLOUDFRONT_DISTRIBUTION_ID,
+        paths: [
+          '/*'
+        ]
+      }))
+      .build(function(err) {
+        if (err) throw err;
+      })
     break
   // An invalid action was chosen. Error!
   default:
