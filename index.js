@@ -103,6 +103,7 @@ const website = Metalsmith(__dirname)
     dest: 'favicons/',
     appName: websiteName,
     appDescription: websiteDescription,
+    background: '#c09859',
     icons: {
       android: true,
       appleIcon: true,
