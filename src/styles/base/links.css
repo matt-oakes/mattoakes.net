@@ -2,7 +2,9 @@ a {
     color: black;
     text-decoration: underline;
 
+    transition: color 0.15s;
+
     &:hover {
-        text-decoration: none;
+        color: var(--brandColor);
     }
 }
