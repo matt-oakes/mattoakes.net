@@ -1,0 +1,31 @@
+---
+title: Improve your mobile app — Matt Oakes — Android, iOS & React Native App Developer in Brighton & London
+layout: layout.hbs
+twitter: true
+---
+
+<div id="go-mobile" class="service">
+    <section class="service-section">
+        <h2>Improve your mobile app</h2>
+        <p>Do you already have a mobile presence, but it's not performing as well as it could? Maybe you are seeing poor user retention or engagement? Maybe your users are unhappy and are leaving bad reviews?</p>
+        <p>Just having a mobile presence is not enough — it must provide value to your users to deliver a return on your investment. If your app is underperforming, I can help you.</p>
+    </section>
+
+    <section class="service-section">
+        <h3>Identifying your areas for improvement</h3>
+        <p>I will start by conducting a thorough review of your existing mobile presence so both you and I have a clear picture of exactly what is working and what is not. I will gather this information by analysing your analytics data, reviewing feedback and reviews from your users, and taking a detailed look at the app itself. At the end of this process I will deliver your personalised app review document. This allows us to make informed decisions together and ensure I make the improvements which will provide the biggest value to your users and the best return on your investment.</p>
+    </section>
+
+    <section class="service-section">
+        <h3>Improve &amp; learn</h3>
+        <p>Once we have a clear indication of the areas which are in need of improvement, we can begin fixing them. The exact details of what I will do to improve your mobile presence will specific to you — however, for example, if you were having issues with user engagement ,one possible improvement we could make would be to implement relevant and engaging push notifications. These would allow you to gain your users attention and bring them back into your application when there is something valuable you can provide them.</p>
+        <p>All the way through this process of improvement I will work with you to identify your most passionate and engaged users and recruit them as beta testers for your improved app. From this we can gain valuable feedback to ensure we are always improving the app for your users and giving you a great return on your investment into improving your mobile presence.</p>
+    </section>
+
+    <section class="service-section service-contact">
+        <p>Ready to improve your mobile app?</p>
+        <div class="buttons">
+            <div class="button"><a href="contact">Contact me</a></div>
+        </div>
+    </section>
+</div>
