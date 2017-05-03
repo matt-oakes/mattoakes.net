@@ -1,28 +1,27 @@
-div.button {
+div.buttons {
     lost-align: center;
     margin-bottom: 0.45rem;
+    flex-direction: column;
 
-    & a {
-        display: block;
-        border: 2px solid var(--brandColor);
-        background-color: transparent;
-        padding: 0.75rem 1.5rem;
+    & div.button {
+        & a {
+            display: block;
+            border: 2px solid var(--brandColor);
+            background-color: transparent;
+            padding: 0.75rem 1.5rem;
 
-        font-size: 1rem;
-        color: var(--brandColor);
-        font-family: var(--headerFontFamily);
-        text-decoration: none;
-        text-align: center;
+            font-size: 1rem;
+            color: var(--brandColor);
+            font-family: var(--headerFontFamily);
+            text-decoration: none;
+            text-align: center;
 
-        transition: background-color 0.25s, color 0.25s;
+            transition: background-color 0.25s, color 0.25s;
 
-        &:not(:first-child) {
-            margin-left: 1rem;
-        }
-
-        &:hover {
-            background-color: var(--brandColor);
-            color: white;
+            &:hover {
+                background-color: var(--brandColor);
+                color: white;
+            }
         }
     }
 }
@@ -47,3 +46,12 @@ input.button {
     }
 }
 
+@media (min-width: 500px) {
+    div.buttons {
+        flex-direction: row;
+
+        & div.button {
+            margin: 0 0.5rem;
+        }
+    }
+}
