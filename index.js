@@ -9,6 +9,7 @@ var twitterCard = require('metalsmith-twitter-card')
 var permalinks = require('metalsmith-permalinks')
 var picsetGenerate = require('metalsmith-picset-generate')
 var picsetHandlearsHelper = require('metalsmith-picset-handlebars-helper')
+var htmlMinifier = require("metalsmith-html-minifier")
 var s3 = require('metalsmith-s3')
 var cloudfront = require('metalsmith-cloudfront')
 
@@ -108,6 +109,7 @@ const website = Metalsmith(__dirname)
     title: websiteName,
     description: websiteDescription
   }))
+  .use(htmlMinifier())
 
 // Perform the final actions depending on what action has been asked for
 switch (process.argv[2]) {
