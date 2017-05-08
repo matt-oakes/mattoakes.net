@@ -95,7 +95,7 @@ const website = Metalsmith(__dirname)
   })
   // Transpile markdown to HTML with handlebars support
   .use(hbtmd(handlebars, {
-        pattern: '**/*.md'
+        pattern: '**/*.{html,md}'
     }))
   .use(markdown())
   // Generate our favicons
