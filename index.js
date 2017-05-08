@@ -64,6 +64,7 @@ const website = Metalsmith(__dirname)
           },
           'Work Sans': {
             '400': [],
+            '500': [],
             '700': []
           }
         },

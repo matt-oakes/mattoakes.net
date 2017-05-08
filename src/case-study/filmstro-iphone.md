@@ -1,0 +1,41 @@
+---
+title: Filmstro for iPhone Case Study — Matt Oakes — Android, iOS & React Native App Developer in Brighton & London
+layout: layout.hbs
+twitter: true
+---
+
+<div id="filmstro" class="case-study">
+    <section class="case-study-section">
+        <h2>Filmstro for iPhone</h2>
+        <p>When I started working with Filmstro they had an existing professional product on Windows and MacOS. In October 2016 I helped them to bring their dynamic soundtrack creation studio to iPhone.</p>
+        <p>Their new iPhone app allows users to pick a video from their phone and add a soundtrack to it. However, the soundtracks are not just static pieces of music but can be altered throughout the video to fit the mood. Once a video is recorded it can be shared on social networks such as Twitter, Instagram, and Facebook. The app features many pieces of music from the professional Filmstro application. Some of the music is free and others are available as in-app purchases.</p>
+    </section>
+
+    <section class="case-study-section">
+        <h3>Release rarly, release often</h3>
+        <p>From experience, I have found that the best ideas are rarely the ones which you start with. I have also found that actually using a feature within the app quickly reveals potential flaws and sparks inspiration for improvements. Because of this, I chose to release testable versions of the app to the Filmstro team early and often through the project. These builds allowed the team to evaluate the app while it was being developed and suggest improvements and change direction before it is too late.</p>
+        <p>For example, we decided to move from using the same three dynamic soundtrack sliders as the professional Filmstro application, to a single slider. In the designs, it made perfect sense to match the professional application, however, from using an early version of the app it was clear that these three sliders were cumbersome to use on a small touchscreen. As this was around half way through the project, we were able to make the change easily. Without the early internal versions, it may have been too late to change before release.</p>
+    </section>
+
+    <section class="case-study-section">
+        <h3>Delivering stability</h3>
+        <p>Building an app which looks great is not enough if it is unstable. While developing the Filmstro iPhone app I took great care to ensure the app was as bug-free as possible. The app is structured using the Model View Presenter pattern which allowed me to easily and thoroughly test the application using automated unit tests. These ensure that when making changes to the app, nothing else has been accidently broken to cause a bug or a crash.</p>
+        <p>If the worst does happen and the app does crash, we need to know exactly what went wrong. To provide this feedback, I integrated Fabric Crashlytics which gives the team real-time reports of any issues and an insight into why they are happening. This was also used in the early internal versions to catch many potential issues before the app launched.</p>
+    </section>
+
+    <section class="case-study-section case-study-download">
+        <p class="app-store-download">
+            <a href="https://static1.squarespace.com/static/5751f3a786db434acb8e3063/t/582873d2e4fcb505193ba100/1483187437659/?format=750w">
+                {{{ fingerprint-picset (picset "app-store-badge" 540 "540w, 270w" "Download Filmstro from the App Store") }}}
+            </a>
+        </p>
+    </section>
+
+    <section class="case-study-section case-study-contact">
+        <p>Whether you are taking your first steps into mobile or you need to improve your existing app, I can help. I specialise in helping companies with their mobile strategy and Android &amp; iOS development.</p>
+        <p>If you’re ready to improve your mobile presence, get in touch.</p>
+        <div class="buttons">
+            <div class="button"><a href="/contact/">Contact me</a></div>
+        </div>
+    </section>
+</div>
