@@ -1,13 +1,9 @@
 #index {
     & .index-section {
-        margin: 2rem 0;
+        margin: 2.5rem 0;
 
         & header {
             margin-bottom: 1.3rem;
-        }
-
-        &>.row {
-            margin-top: 2rem;
         }
 
         & .button {
@@ -33,13 +29,14 @@
 
     & .help-type, & .work-entry, & .me-trait {
         lost-column: 1/1;
+        margin-bottom: 1rem;
     }
 }
 
 @media (min-width: 500px) {
     #index {
         & .index-section {
-            margin: 4rem 0;
+            margin: 5rem 0;
         }
 
         & section#introduction {
@@ -64,6 +61,18 @@
                     line-height: 4rem;
                 }
             }
+        }
+
+        & .index-section {
+            margin: 5rem 0;
+
+            &>.row {
+                margin-top: 2rem;
+            }
+        }
+
+        & .help-type, & .work-entry, & .me-trait {
+            margin-bottom: 0;
         }
 
         & .help-type, & .work-entry {

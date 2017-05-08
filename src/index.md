@@ -45,10 +45,9 @@ twitter: true
             <div id="filmstro" class="work-entry">
                 {{{ fingerprint-picset (picset "filmstro" 1000 "(min-width: 900px) calc(900px / 2), 100vw" "Filmstro iPhone screenshots") }}}
                 <h3>Filmstro for iPhone</h3>
-                <p>Working directly with the amazing team of at Filmstro, I created an iPhone app to adds dynamic soundtracks to peoples video moments, creating the soundtrack to their life.</p>
+                <p>Working directly with the team of at Filmstro, I created an iPhone app to adds dynamic soundtracks to peoples video moments, creating the soundtrack to their life.</p>
                 <div class="buttons">
-                    <div class="button"><a href="#">Read the case study</a></div>
-                    <div class="button"><a href="https://itunes.apple.com/gb/app/filmstro-create-soundtrack/id1159676415">Download the app</a></div>
+                    <div class="button"><a href="/case-study/filmstro-iphone/">Read the case study</a></div>
                 </div>
             </div>
             <div id="google-playbook" class="work-entry">
@@ -64,7 +63,7 @@ twitter: true
             <div id="easyfundraising" class="work-entry">
                 {{{ fingerprint-picset (picset "easyfundraising" 600 "(min-width: 900px) calc(900px / 2), 100vw" "Easyfundraising screenshots") }}}
                 <h3>Easyfundraising for iOS</h3>
-                <p>Easyfundraising help customers raise money for good causes by shopping. I worked on this native iOS app at <a href="http://ribot.co.uk/work/easyfundraising">ribot</a> and, as of January 2016, there has been £17m spent through the app.</p>
+                <p>Easyfundraising help customers raise money for good causes by shopping. I worked on this native iOS app at <a href="http://ribot.co.uk/work/easyfundraising">ribot</a>. As of January 2016, there has been £17m spent through the app.</p>
                 <div class="buttons">
                     <div class="button"><a href="https://itunes.apple.com/gb/app/easyfundraising/id915474725">Download the app</a></div>
                 </div>

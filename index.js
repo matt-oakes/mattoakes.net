@@ -52,7 +52,7 @@ const website = Metalsmith(__dirname)
         baseLineHeight: 1.8,
         headerFontFamily: ['Unna', 'serif'],
         headerWeight: '400',
-        bodyFontFamily: ['Arimo', 'Helvetica', 'Arial', 'sans-serif'],
+        bodyFontFamily: ['Work Sans', 'Helvetica', 'Arial', 'sans-serif'],
         scaleRatio: 3,
         blockMarginBottom: 1/4,
         includeNormalize: false
@@ -62,7 +62,7 @@ const website = Metalsmith(__dirname)
           'Unna': {
             '400': []
           },
-          'Arimo': {
+          'Work Sans': {
             '400': [],
             '700': []
           }

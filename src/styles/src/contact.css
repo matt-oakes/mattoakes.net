@@ -2,7 +2,7 @@
     width: 100%;
 
     & .contact-section {
-        margin: 2rem 0;
+        margin: 2.5rem 0;
     }
 
     & #introduction {
@@ -56,7 +56,7 @@
 @media (min-width: 900px) {
     #contact {
         & .contact-section {
-            margin: 4rem 0;
+            margin: 5rem 0;
         }
 
         & #introduction {
