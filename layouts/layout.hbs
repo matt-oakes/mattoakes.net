@@ -12,6 +12,42 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ sitename }} - {{ title }}">
   <meta property="og:description" content="{{ description }}">
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Matt Oakes Limited",
+      "url": "{{ siteurl }}",
+      "image": "{{ siteurl }}favicons/android-chrome-512x512.png",
+      "logo": "{{ siteurl }}favicons/android-chrome-512x512.png",
+      "founder": {
+        "@type": "Person",
+        "name": "Matt Oakes",
+        "givenName": "Matt",
+        "familyName": "Oakes",
+        "email": "hello@mattoakes.net",
+        "image": "{{ siteurl }}favicons/android-chrome-512x512.png",
+        "sameAs": [
+          "https://twitter.com/mattdoesmobile",
+          "https://medium.com/@mattoakes",
+          "https://github.com/matt-oakes",
+          "https://www.linkedin.com/in/oakesm9"
+        ]
+      },
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "email": "hello@mattoakes.net",
+        "contactType": "sales",
+        "url": "{{ siteurl }}contact/"
+      }],
+      "sameAs": [
+        "https://twitter.com/mattdoesmobile",
+        "https://medium.com/@mattoakes",
+        "https://github.com/matt-oakes",
+        "https://www.linkedin.com/in/oakesm9"
+      ]
+    }
+  </script>
 </head>
 <body>
   <section id="page">
