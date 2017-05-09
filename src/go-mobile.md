@@ -1,5 +1,5 @@
 ---
-title: Go mobile — Matt Oakes — Android, iOS & React Native App Developer in Brighton & London
+title: Go mobile — Matt Oakes
 layout: layout.hbs
 twitter: true
 ---

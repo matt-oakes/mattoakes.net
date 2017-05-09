@@ -31,6 +31,7 @@
     "metalsmith-picset-generate": "^0.0.2",
     "metalsmith-picset-handlebars-helper": "^0.0.2",
     "metalsmith-s3": "^0.1.0",
+    "metalsmith-sitemap": "^1.2.0",
     "metalsmith-twitter-card": "^1.0.4",
     "metalsmith-with-postcss": "^1.0.0",
     "normalize.css": "^6.0.0",

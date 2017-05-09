@@ -11,6 +11,7 @@ var permalinks = require('metalsmith-permalinks')
 var picsetGenerate = require('metalsmith-picset-generate')
 var picsetHandlearsHelper = require('metalsmith-picset-handlebars-helper')
 var htmlMinifier = require("metalsmith-html-minifier")
+var sitemap = require('metalsmith-sitemap')
 var s3 = require('./s3')
 var cloudfront = require('metalsmith-cloudfront')
 
@@ -129,6 +130,10 @@ const website = Metalsmith(__dirname)
     description: websiteDescription
   }))
   .use(htmlMinifier())
+  .use(sitemap({
+    hostname: websiteUrl,
+    omitIndex: true
+  }))
 
 // Perform the final actions depending on what action has been asked for
 switch (process.argv[2]) {

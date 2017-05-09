@@ -1,5 +1,5 @@
 ---
-title: Improve your mobile app — Matt Oakes — Android, iOS & React Native App Developer in Brighton & London
+title: Improve your mobile app — Matt Oakes
 layout: layout.hbs
 twitter: true
 ---
