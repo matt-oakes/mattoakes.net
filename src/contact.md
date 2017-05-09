@@ -31,7 +31,7 @@ priority: 0.8
                 <label for="message">Your message</label>
                 <textarea name="message" rows="5" required></textarea>
             </fieldset>
-            <input type="hidden" name="_next" value="//0.0.0.0:3000/thanks/" />
+            <input type="hidden" name="_next" value="{{ siteurl }}thanks/" />
 
             <input class="button submit" type="submit" value="Send">
         </form>
