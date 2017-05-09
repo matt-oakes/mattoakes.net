@@ -208,7 +208,7 @@ function plugin(config) {
           mime.lookup(file) ||
           undefined
         )
-        if (param.ContentType !== 'text/html') {
+        if (param.ContentType !== 'text/html' && param.ContentType !== 'text/plain' && param.ContentType !== 'text/xml' && param.ContentType !== 'application/xml') {
           param.CacheControl = 'max-age=16000000';
         } else {
           param.CacheControl = undefined;
