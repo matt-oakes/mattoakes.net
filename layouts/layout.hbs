@@ -58,7 +58,9 @@
       indexFilename: 'index.html',
       trailingSlash: 'add'
     });
-    ga('require', 'maxScrollTracker');
+    ga('require', 'maxScrollTracker', {
+      maxScrollMetricIndex: 1
+    });
     ga('require', 'pageVisibilityTracker');
     ga('require', 'outboundLinkTracker');
     ga('require', 'outboundFormTracker');
