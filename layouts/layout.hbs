@@ -61,7 +61,9 @@
     ga('require', 'maxScrollTracker', {
       maxScrollMetricIndex: 1
     });
-    ga('require', 'pageVisibilityTracker');
+    ga('require', 'pageVisibilityTracker', {
+      visibleMetricIndex: 2
+    });
     ga('require', 'outboundLinkTracker');
     ga('require', 'outboundFormTracker');
 
