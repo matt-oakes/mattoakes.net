@@ -59,7 +59,14 @@
       trailingSlash: 'add'
     });
     ga('require', 'maxScrollTracker', {
-      maxScrollMetricIndex: 1
+      maxScrollMetricIndex: 1,
+      hitFilter: function(model) {
+        // Sets the nonInteractive field to `true` for the current hit.
+        var scrollPercentage = model.get('eventLabel');
+        if (scrollPercentage > 50) {
+          model.set('nonInteraction', true, true);
+        }
+      }
     });
     ga('require', 'pageVisibilityTracker', {
       visibleMetricIndex: 2
