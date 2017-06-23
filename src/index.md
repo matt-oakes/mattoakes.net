@@ -40,7 +40,7 @@ priority: 1.0
 
     <section id="my-work" class="index-section">
         <header>
-            <h2>My work</h2>
+            <h2>My latest work</h2>
         </header>
         <div class="row">
             <div id="filmstro" class="work-entry">
@@ -61,13 +61,10 @@ priority: 1.0
             </div>
         </div>
         <div class="row">
-            <div id="easyfundraising" class="work-entry">
-                {{{ fingerprint-picset (picset "easyfundraising" 600 "(min-width: 900px) calc(900px / 2), 100vw" "Easyfundraising screenshots") }}}
-                <h3>Easyfundraising for iOS</h3>
-                <p>Easyfundraising help customers raise money for good causes by shopping. I worked on this native iOS app at <a href="http://ribot.co.uk/work/easyfundraising">ribot</a>. As of January 2016, there has been £17m spent through the app.</p>
-                <div class="buttons">
-                    <div class="button"><a href="https://itunes.apple.com/gb/app/easyfundraising/id915474725">Download the app</a></div>
-                </div>
+            <div id="qube" class="work-entry">
+                {{{ fingerprint-picset (picset "qube" 1000 "(min-width: 900px) calc(900px / 2), 100vw" "Qubist mobile screenshots") }}}
+                <h3>Qubist for iOS & Android</h3>
+                <p><a href="">Qubist</a> is the UK number 1 influencer & advocate marketing solution. Using React Native I was able to create an app which worked across iOS & Android and could be whitelabeled for the many brands they work with; all using a single codebase.</p>
             </div>
             <div id="mgemi" class="work-entry">
                 {{{ fingerprint-picset (picset "mgemi" 1000 "(min-width: 900px) calc(900px / 2), 100vw" "Mgemi iOS screenshots") }}}
