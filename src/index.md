@@ -15,6 +15,12 @@ priority: 1.0
         </div>
     </section>
 
+    <section class="index-section contact">
+        <div class="buttons">
+            <div class="button"><a href="/contact">Contact me</a></div>
+        </div>
+    </section>
+
     <section id="how-i-can-help" class="index-section">
         <header>
             <h2>How I can help</h2>
@@ -107,6 +113,12 @@ priority: 1.0
                 <h3>Craft</h3>
                 <p>Things change fast in business — this is especially true with mobile. To deal with change quickly and effectively you need to have a solid foundation. I pride myself on crafting solid apps which can be improved quickly & effectively.</p>
             </div>
+        </div>
+    </section>
+
+    <section class="index-section contact">
+        <div class="buttons">
+            <div class="button"><a href="/contact">Contact me</a></div>
         </div>
     </section>
 </div>

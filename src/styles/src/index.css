@@ -1,6 +1,6 @@
 #index {
     & .index-section {
-        margin: 2.5rem 0;
+        margin: 2rem 0;
 
         & header {
             margin-bottom: 1.3rem;
@@ -64,7 +64,7 @@
         }
 
         & .index-section {
-            margin: 5rem 0;
+            margin: 4rem 0;
 
             &>.row {
                 margin-top: 2rem;
