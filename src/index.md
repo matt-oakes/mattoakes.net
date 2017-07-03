@@ -11,14 +11,12 @@ priority: 1.0
             <p>Whether you are taking your first steps into mobile or you need to improve your existing app, I can help.</p>
         </div>
         <div id="about">
-            <p>I am a <strong>mobile app development consultant</strong> who works with companies in Brighton, London, and around the world to build and improve their mobile presence on both Android & iOS. I create apps which users love and which help businesses reach and engage with their best customers. I create solid and well developed mobile apps which can be built upon and improved in the future to achieve your business goals and fulfill your user's needs.</p>
+            <p>I am a <strong>mobile app development consultant</strong> who works with companies in Brighton, London, and around the world to build and improve their mobile presence on both Android & iOS using <a href="/react-native/">React Native</a> or <a href="/native-development/">Native Development</a>. I create apps which users love and which help businesses reach and engage with their best customers. I create solid and well developed mobile apps which can be built upon and improved in the future to achieve your business goals and fulfill your user's needs.</p>
         </div>
     </section>
 
     <section class="index-section contact">
-        <div class="buttons">
-            <div class="button"><a href="/contact">Contact me</a></div>
-        </div>
+        {{> contact-button }}
     </section>
 
     <section id="how-i-can-help" class="index-section">
@@ -117,8 +115,6 @@ priority: 1.0
     </section>
 
     <section class="index-section contact">
-        <div class="buttons">
-            <div class="button"><a href="/contact">Contact me</a></div>
-        </div>
+        {{> contact-button }}
     </section>
 </div>

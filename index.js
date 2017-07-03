@@ -14,6 +14,7 @@ var htmlMinifier = require("metalsmith-html-minifier")
 var sitemap = require('metalsmith-sitemap')
 var s3 = require('./s3')
 var cloudfront = require('metalsmith-cloudfront')
+var discoverPartials = require('metalsmith-discover-partials')
 
 if (process.argv.length !== 3) {
   console.error('Error: You must provide an action. One of "build" or "deploy".')
@@ -94,6 +95,11 @@ const website = Metalsmith(__dirname)
     })
     return process.nextTick(done)
   })
+  // Add the partials to Handlebars
+  .use(discoverPartials({
+    directory: 'partials',
+    pattern: /\.hbs$/
+  }))
   // Transpile markdown to HTML with handlebars support
   .use(hbtmd(handlebars, {
         pattern: '**/*.{html,md}'
