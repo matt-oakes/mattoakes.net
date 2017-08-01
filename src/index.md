@@ -28,16 +28,10 @@ priority: 1.0
             <div id="go-mobile" class="help-type">
                 <h3>Go mobile</h3>
                 <p>Not having a well made and easy to use mobile app is no longer an option for many companies. Users expect one and they expect it to deliver them value. This is where I can help.</p>
-                <div class="buttons">
-                    <div class="button"><a href="/go-mobile/">Ready to go mobile?</a></div>
-                </div>
             </div>
             <div id="improve-your-app" class="help-type">
                 <h3>Improve your app</h3>
                 <p>Just having a mobile presence is not enough — it must provide value to your users to deliver a return on your investment. If your app is underperforming, I can help you.</p>
-                <div class="buttons">
-                    <div class="button"><a href="/improve-your-mobile-app/">Ready to improve your app?</a></div>
-                </div>
             </div>
         </div>
     </section>
