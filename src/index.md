@@ -44,11 +44,21 @@ priority: 1.0
             <div id="filmstro" class="work-entry">
                 {{{ fingerprint-picset (picset "filmstro" 1000 "(min-width: 900px) calc(900px / 2), 100vw" "Filmstro iPhone screenshots") }}}
                 <h3>Filmstro for iPhone</h3>
-                <p>Working directly with the team of at Filmstro, I created an iPhone app to adds dynamic soundtracks to peoples video moments, creating the soundtrack to their life.</p>
+                <p>Working directly with the brilliant Brighton based team at Filmstro, I created an iPhone app to adds dynamic soundtracks to peoples video moments, creating the soundtrack to their life.</p>
                 <div class="buttons">
                     <div class="button"><a href="/case-study/filmstro-iphone/">Read the case study</a></div>
                 </div>
             </div>
+            <div id="qube" class="work-entry">
+                {{{ fingerprint-picset (picset "qube" 1000 "(min-width: 900px) calc(900px / 2), 100vw" "Qubist mobile screenshots") }}}
+                <h3>Qubist for iOS & Android</h3>
+                <p>Qubist is the UKs #1 advocate marketing solution. Using a single React Native codebase, I created an app which worked across platfroms and could be whitelabeled for many brands.</p>
+                <div class="buttons">
+                    <div class="button"><a href="/case-study/qubist-react-native/">Read the case study</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <div id="google-playbook" class="work-entry">
                 {{{ fingerprint-picset (picset "google-playbook" 1000 "(min-width: 900px) calc(900px / 2), 100vw" "Google Playbook screenshots") }}}
                 <h3>Playbook by Google Play</h3>
@@ -56,13 +66,6 @@ priority: 1.0
                 <div class="buttons">
                     <div class="button"><a href="https://play.google.com/store/apps/details?id=com.google.android.apps.secrets">Download the app</a></div>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div id="qube" class="work-entry">
-                {{{ fingerprint-picset (picset "qube" 1000 "(min-width: 900px) calc(900px / 2), 100vw" "Qubist mobile screenshots") }}}
-                <h3>Qubist for iOS & Android</h3>
-                <p><a href="">Qubist</a> is the UK number 1 influencer & advocate marketing solution. Using React Native I was able to create an app which worked across iOS & Android and could be whitelabeled for the many brands they work with; all using a single codebase.</p>
             </div>
             <div id="mgemi" class="work-entry">
                 {{{ fingerprint-picset (picset "mgemi" 1000 "(min-width: 900px) calc(900px / 2), 100vw" "Mgemi iOS screenshots") }}}
