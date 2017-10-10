@@ -22,7 +22,7 @@ priority: 1.0
     <section id="how-i-can-help" class="index-section">
         <header>
             <h2>How I can help</h2>
-            <p>I work with a range of companies, from those who realise they need to "Go Mobile" through to those who's current mobile presence is underperforming and needs improvement.</p>
+            <p>I work with a range of companies, from those who realise they need to "Go Mobile" through to those whoes current mobile presence is underperforming and needs improvement.</p>
         </header>
         <div class="row">
             <div id="go-mobile" class="help-type">
