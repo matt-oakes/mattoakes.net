@@ -41,6 +41,24 @@ priority: 1.0
             <h2>My latest work</h2>
         </header>
         <div class="row">
+            <div id="bestcoffee" class="work-entry">
+                {{{ fingerprint-picset (picset "bestcoffee" 1000 "(min-width: 900px) calc(900px / 2), 100vw" "Best Coffee Guide mobile screenshots") }}}
+                <h3>Best Coffee for iOS & Android</h3>
+                <p>Best Coffee is a guide to the best coffee around you. All the shops are reviewed by expert editors and filtered to your preferences. The app is built for both iOS and Android using <a href="/react-native/">React Native</a>.</p>
+                <div class="buttons">
+                    <div class="button"><a href="https://www.bestcoffee.guide/">More about Best Coffee</a></div>
+                </div>
+            </div>
+            <div id="refsix" class="work-entry">
+                {{{ fingerprint-picset (picset "refsix" 1000 "(min-width: 900px) calc(900px / 2), 100vw" "refsix Apple Watch screenshots") }}}
+                <h3>REFSIX for Apple Watch</h3>
+                <p>REFSIX approached me to build the Apple Watch app to help referees reach the next level. The smartwatch app is built natively with Swift and allows referees to log match incidents easily during games.</p>
+                <div class="buttons">
+                    <div class="button"><a href="https://refsix.com/">More about REFSIX</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <div id="filmstro" class="work-entry">
                 {{{ fingerprint-picset (picset "filmstro" 1000 "(min-width: 900px) calc(900px / 2), 100vw" "Filmstro iPhone screenshots") }}}
                 <h3>Filmstro for iPhone</h3>
@@ -52,7 +70,7 @@ priority: 1.0
             <div id="qube" class="work-entry">
                 {{{ fingerprint-picset (picset "qube" 1000 "(min-width: 900px) calc(900px / 2), 100vw" "Qubist mobile screenshots") }}}
                 <h3>Qubist for iOS & Android</h3>
-                <p>Qubist is the UKs #1 advocate marketing solution. Using a single React Native codebase, I created an app which worked across platfroms and could be whitelabeled for many brands.</p>
+                <p>Qubist is the UKs #1 advocate marketing solution. Using a single <a href="/react-native/">React Native</a> codebase, I created an app which worked across platfroms and could be whitelabeled for many brands.</p>
                 <div class="buttons">
                     <div class="button"><a href="/case-study/qubist-react-native/">Read the case study</a></div>
                 </div>
