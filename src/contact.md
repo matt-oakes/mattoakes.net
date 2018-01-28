@@ -10,14 +10,17 @@ priority: 0.8
         <div id="tagline">
             <p>Ready to improve your mobile presence?</p>
         </div>
-        <p>If you prefer you can email directly at <a href="mailto:hello@mattoakes.net">hello@mattoakes.net.</a></p>
     </section>
 
     <section id="contact-form" class="contact-section">
-        <form action="//formspree.io/hello@mattoakes.net" method="POST">
+        <form action="https://formcarry.com/s/rk_AxujrG" method="POST">
             <fieldset>
-                <label for="name">Your name</label>
-                <input type="text" name="name" required>
+                <label for="name">Your first name</label>
+                <input type="text" name="firstname" required>
+            </fieldset>
+            <fieldset>
+                <label for="name">Your last name</label>
+                <input type="text" name="lastname" required>
             </fieldset>
             <fieldset>
                 <label for="email">Your email</label>
@@ -25,15 +28,18 @@ priority: 0.8
             </fieldset>
             <fieldset>
                 <label for="_subject">Subject</label>
-                <input type="text" name="_subject" required>
+                <input type="text" name="subject" required>
             </fieldset>
             <fieldset>
                 <label for="message">Your message</label>
                 <textarea name="message" rows="5" required></textarea>
             </fieldset>
-            <input type="hidden" name="_next" value="{{ siteurl }}thanks/" />
-
             <input class="button submit" type="submit" value="Send">
         </form>
+        <p class="small">I will also send you monthly tips to improve your mobile app.</p>
     </section>
+
+    <section id="alt-method" class="contact-section">
+        <p>If you prefer you can email directly at <a href="mailto:hello@mattoakes.net">hello@mattoakes.net.</a></p>
+    </scetion>
 </div>
