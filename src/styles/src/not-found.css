@@ -8,7 +8,7 @@
             margin: 0 1rem;
 
             & p {
-                font-family: Unna, serif;
+                font-family: var(--headerFontFamily);
                 font-weight: 400;
                 text-rendering: optimizeLegibility;
                 font-size: 2rem;

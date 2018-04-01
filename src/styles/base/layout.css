@@ -33,9 +33,9 @@
                 display: inline-block;
 
                 & a {
-                    font-family: Unna, serif;
+                    font-family: var(--headerFontFamily);
                     font-weight: 400;
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     text-decoration: none;
                     color: black;
 
@@ -56,6 +56,14 @@
 
 .row {
     lost-flex-container: row;
+}
+
+@media (min-width: 500px) {
+    #page {
+        &-header ul li a {
+            font-size: 1.2rem;
+        }
+    }
 }
 
 @media (min-width: 900px) {

@@ -50,21 +50,21 @@ const website = Metalsmith(__dirname)
       },
       'lost': {},
       'postcss-typography': {
-        baseFontSize: '20px',
+        baseFontSize: '22px',
         baseLineHeight: 1.8,
-        headerFontFamily: ['Unna', 'serif'],
+        headerFontFamily: ['Alegreya', 'serif'],
         headerWeight: '400',
-        bodyFontFamily: ['Work Sans', 'Helvetica', 'Arial', 'sans-serif'],
+        bodyFontFamily: ['"Alegreya Sans"', 'Helvetica', 'Arial', 'sans-serif'],
         scaleRatio: 3,
         blockMarginBottom: 1/4,
         includeNormalize: false
       },
       'postcss-font-magician': {
         variants: {
-          'Unna': {
+          'Alegreya': {
             '400': []
           },
-          'Work Sans': {
+          'Alegreya Sans': {
             '400': [],
             '500': [],
             '700': []

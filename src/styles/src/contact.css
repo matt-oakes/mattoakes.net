@@ -10,7 +10,7 @@
             margin-bottom: 4rem;
 
             & p {
-                font-family: Unna, serif;
+                font-family: var(--headerFontFamily);
                 font-weight: 400;
                 text-rendering: optimizeLegibility;
                 font-size: 2rem;
@@ -30,7 +30,7 @@
 
             & label {
                 font-size: 1.1rem;
-                font-family: Unna, serif;
+                font-family: var(--headerFontFamily);
                 font-weight: 400;
                 text-rendering: optimizeLegibility;
                 margin-bottom: 0.5rem;
