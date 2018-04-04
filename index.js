@@ -3,6 +3,8 @@ var fingerprint = require('metalsmith-fingerprint')
 var handlebars = require('handlebars')
 var postcss = require('metalsmith-with-postcss')
 var layouts = require('metalsmith-layouts')
+var collections = require('metalsmith-collections')
+var archive = require('metalsmith-archive')
 var hbtmd = require('metalsmith-hbt-md')
 var markdown = require('metalsmith-markdown')
 var favicons = require('metalsmith-favicons')
@@ -42,6 +44,17 @@ const website = Metalsmith(__dirname)
   .destination('./build')
   // Ensure we clean before building
   .clean(true)
+  // Setup the collections
+  .use(collections({
+    guides: {
+      pattern: "guides/*.html",
+      sortBy: 'title',
+      refer: false
+    }
+  }))
+  .use(archive({
+    collections: "guides"
+  }))
   // Process our CSS using PostCSS with a few plugins
   .use(postcss({
     plugins: {
