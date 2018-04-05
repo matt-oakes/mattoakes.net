@@ -11,7 +11,8 @@
 }
 
 .guide-page {
-    margin: 1.5rem 0;
+    margin: 1.5rem auto;
+    max-width: 700px;
 
     & .guide-page-section {
         margin: 1.5rem 0;
@@ -42,7 +43,7 @@
     }
 
     .guide-page {
-        margin: 2rem 0;
+        margin: 2rem auto;
 
         & .guide-page-section {
             margin: 2rem 0;
