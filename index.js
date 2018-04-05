@@ -50,6 +50,11 @@ const website = Metalsmith(__dirname)
   .use(redirect({
     "/react-native/": "/guides/react-native/",
     "/native-development/": "/guides/native-development/",
+    "/what-information-do-i-need-to-submit-to-the-amazon-app-store-b515bb4d32ee": "/guides/what-information-is-needed-for-an-amazon-app-store-listing/",
+    "/what-information-do-i-need-to-submit-to-the-google-play-store-5f261870bab0": "/guides/what-information-is-needed-for-a-google-play-store-listing/",
+    "/what-information-do-i-need-to-submit-to-the-apple-app-store-a33ecc38a5ca": "/guides/what-information-is-needed-for-an-apple-app-store-listing/",
+    "/mobile-web-or-mobile-app-fdf96460264f": "/guides/mobile-web-or-mobile-app/",
+    "/a-better-way-to-automatically-merge-changes-in-your-xcode-project-files-3d83b3583fe4": "https://medium.com/@mattoakes/a-better-way-to-automatically-merge-changes-in-your-xcode-project-files-3d83b3583fe4"
   }))
   // Process our CSS using PostCSS with a few plugins
   .use(postcss({
