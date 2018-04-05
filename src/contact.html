@@ -16,7 +16,7 @@ priority: 0.8
         <div class="row">
             <div class="process-entry">
                 <h3>1. Fill in your details</h3>
-                <p>Fill in your details below to give me an initial idea of the type of project you would like me to work with you on.</p>
+                <p>Fill in your details in the form below to give me an idea of the type of project you would like me to work with you on.</p>
             </div>
             <div class="process-entry">
                 <h3>2. Questionnaire</h3>
@@ -29,6 +29,10 @@ priority: 0.8
         </div>
     </section>
 
+    <section id="alt-method" class="contact-section">
+        <p>If you have contacted me using this form previously, or if you prefer emailing directly, you can reach me at <a href="mailto:hello@mattoakes.net">hello@mattoakes.net</a>. It will take slightly longer to get back to you this way.</p>
+    </scetion>
+
     <section id="contact-form" class="contact-section">
         <script src="https://assets.convertkit.com/assets/CKJS4.js?v=21"></script>
         <form action="https://app.convertkit.com/landing_pages/369154/subscribe" data-remote="true">
@@ -37,24 +41,24 @@ priority: 0.8
             <input type="hidden" name="ck_form_recaptcha" value="" id="ck_form_recaptcha">
             <fieldset>
                 <label for="first_name">First name</label>
-                <input type="text" name="first_name" required>
+                <input type="text" name="first_name" id="first_name" required>
             </fieldset>
             <fieldset>
                 <label for="ck_field_27439_last_name">Last name</label>
-                <input type="text" name="ck_field_27439_last_name" required>
+                <input type="text" name="ck_field_27439_last_name" id="ck_field_27439_last_name" required>
             </fieldset>
             <fieldset>
                 <label for="email">Email</label>
-                <input type="email" name="email" required>
+                <input type="email" name="email" id="email" required>
             </fieldset>
             <fieldset>
                 <label for="ck_field_27440_app_name">App name <small>(optional)</small></label>
-                <input type="text" name="ck_field_27440_app_name" required>
+                <input type="text" name="ck_field_27440_app_name" id="ck_field_27440_app_name">
             </fieldset>
             <fieldset>
                 <label for="ck_field_27441_initial_contact_type">What can I help you with?</label>
                 <div class="styled-select">
-                    <select name="ck_field_27441_initial_contact_type" required>
+                    <select name="ck_field_27441_initial_contact_type" id="ck_field_27441_initial_contact_type" required>
                         <option value="">&nbsp;</option>
                         <option value="new">Building a new app</option>
                         <option value="improve">Improve an existing app or expand to a new platform</option>
@@ -62,14 +66,13 @@ priority: 0.8
                     </select>
                 </div>
             </fieldset>
+            <fieldset class="checkbox">
+                <input type="checkbox" name="ck_field_27512_tips" id="ck_field_27512_tips" value="yes"><label for="ck_field_27512_tips">I would like to receive a monthly email with tips about improving my app</label>
+            </fieldset>
             <div style="position: absolute !important;left: -999em !important;">
               <input type="text" name="captcha2_h" placeholder="We use this field to detect spam bots. If you fill this in, you will be marked as a spammer.">
             </div>
             <input class="button submit" type="submit" value="Send">
         </form>
     </section>
-
-    <section id="alt-method" class="contact-section">
-        <p>You can also email directly at <a href="mailto:hello@mattoakes.net">hello@mattoakes.net</a> but it will take slightly longer to get back to you.</p>
-    </scetion>
 </div>

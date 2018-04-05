@@ -29,6 +29,10 @@
         & fieldset {
             border-width: 0;
 
+            &.checkbox {
+                margin-bottom: 1rem;
+            }
+
             & label {
                 font-size: 1.1rem;
                 font-family: var(--headerFontFamily);
@@ -42,7 +46,7 @@
                 }
             }
 
-            & input, & textarea {
+            & input:not([type="checkbox"]), & textarea {
                 width: 100%;
                 padding: 0.5rem;
                 margin-bottom: 0.5rem;
@@ -54,6 +58,11 @@
                     border-color: var(--brandColor);
                     outline: 0;
                 }
+            }
+
+            & input[type="checkbox"] {
+                font-size: 1.2rem;
+                margin-right: 0.5rem;
             }
 
             & .styled-select {
@@ -126,7 +135,8 @@
 
         & #contact-form {
             width: 80%;
-            margin: 0 auto;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }
