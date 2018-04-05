@@ -1,22 +1,24 @@
+var fs = require('fs');
+var _ = require('lodash');
 var Metalsmith = require('metalsmith')
 var fingerprint = require('metalsmith-fingerprint')
-var handlebars = require('handlebars')
 var postcss = require('metalsmith-with-postcss')
 var layouts = require('metalsmith-layouts')
 var collections = require('metalsmith-collections')
 var archive = require('metalsmith-archive')
-var hbtmd = require('metalsmith-hbt-md')
-var markdown = require('metalsmith-markdown')
+var discoverPartials = require('metalsmith-discover-partials')
+var discoverHelpers = require('metalsmith-discover-helpers')
+var inPlace = require('metalsmith-in-place')
 var favicons = require('metalsmith-favicons')
 var twitterCard = require('metalsmith-twitter-card')
 var permalinks = require('metalsmith-permalinks')
+var redirect = require('metalsmith-redirect')
 var picsetGenerate = require('metalsmith-picset-generate')
 var picsetHandlearsHelper = require('metalsmith-picset-handlebars-helper')
 var htmlMinifier = require("metalsmith-html-minifier")
 var sitemap = require('metalsmith-sitemap')
 var s3 = require('./s3')
 var cloudfront = require('metalsmith-cloudfront')
-var discoverPartials = require('metalsmith-discover-partials')
 
 if (process.argv.length !== 3) {
   console.error('Error: You must provide an action. One of "build" or "deploy".')
@@ -44,16 +46,10 @@ const website = Metalsmith(__dirname)
   .destination('./build')
   // Ensure we clean before building
   .clean(true)
-  // Setup the collections
-  .use(collections({
-    guides: {
-      pattern: "guides/*.html",
-      sortBy: 'title',
-      refer: false
-    }
-  }))
-  .use(archive({
-    collections: "guides"
+  // Add some redirects for old page paths
+  .use(redirect({
+    "/react-native/": "/guides/react-native/",
+    "/native-development/": "/guides/native-development/",
   }))
   // Process our CSS using PostCSS with a few plugins
   .use(postcss({
@@ -100,24 +96,60 @@ const website = Metalsmith(__dirname)
       'img/**/*'
     ]
   }))
+  // Register the partials
+  .use(function (files, metalsmith, done) {
+    fs.readdir(metalsmith.path("partials"), function(err, files) {
+      if (err) throw err;
+
+      files.forEach(function(file){
+        var templateName = file.split('.').shift();
+        var path = metalsmith.path("partials", file)
+        var partialContents = fs.readFileSync(path).toString('utf8');
+        require('handlebars').registerPartial(templateName, partialContents);
+      });
+
+      done();
+    });
+  })
   // Setup a handlbars helper to modify the picset html
   .use(function (files, metalsmith, done) {
     var imageRegex = /img\/picset\/.*?\.(jpg|png|webp)/g
-    handlebars.registerHelper('fingerprint-picset', (html) => {
+    require('handlebars').registerHelper('fingerprint-picset', (html) => {
       return html.replace(imageRegex, (match) => metalsmith.metadata().fingerprint[match])
     })
     return process.nextTick(done)
   })
-  // Add the partials to Handlebars
-  .use(discoverPartials({
-    directory: 'partials',
-    pattern: /\.hbs$/
+  // Add a handlebars helper to map a collection for the index
+  .use(function (files, metalsmith, done) {
+    var paragraphRegex = /<p>(.*)<\/p>/
+    function getFirstParagraph(html) {
+      var match = paragraphRegex.exec(html);
+      return match.length > 1 ? match[1].replace(/<(?:.|\n)*?>/gm, '') : "";
+    }
+
+    require('handlebars').registerHelper('map-collection', (collection) => {
+      return _.chain(collection)
+        .map(item => ({
+          title: item.guideTitle || item.title,
+          brief: getFirstParagraph(item.contents.toString("utf8")),
+          url: "/" + (item.path.endsWith(".hbs") ? item.path.slice(0, -4) + "/" : item.path)
+        }))
+        .sortBy("title")
+        .value();
+    })
+    return process.nextTick(done)
+  })
+  // Setup the collections
+  .use(collections({
+    guides: {
+      refer: false
+    }
   }))
-  // Transpile markdown to HTML with handlebars support
-  .use(hbtmd(handlebars, {
-        pattern: '**/*.{html,md}'
-    }))
-  .use(markdown())
+  .use(archive({
+    collections: "guides"
+  }))
+  // Transform templates in place
+  .use(inPlace({ pattern: "**/*" }))
   // Generate our favicons
   .use(favicons({
     src: '**/logo.jpg',

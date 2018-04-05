@@ -17,8 +17,8 @@
 
 /* Individual page styles */
 @import "src/index.css";
+@import "src/case-study.css";
 @import "src/contact.css";
+@import "src/guide-page.css";
 @import "src/not-found.css";
 @import "src/service.css";
-@import "src/tech-page.css";
-@import "src/case-study.css";
