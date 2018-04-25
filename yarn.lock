@@ -2130,9 +2130,9 @@ metalsmith-picset-handlebars-helper@^0.0.2:
     lodash "^4.17.4"
     shrinkwrap "^0.4.0"
 
-metalsmith-redirect@^2.1.0:
+"metalsmith-redirect@https://github.com/matt-oakes/metalsmith-redirect.git#e611d943095b1e774004c0db94eb846d1b9aebac":
   version "2.1.0"
-  resolved "https://registry.yarnpkg.com/metalsmith-redirect/-/metalsmith-redirect-2.1.0.tgz#373643846356aa5c209af1644d8f143991004692"
+  resolved "https://github.com/matt-oakes/metalsmith-redirect.git#e611d943095b1e774004c0db94eb846d1b9aebac"
 
 metalsmith-s3@^0.1.0:
   version "0.1.0"

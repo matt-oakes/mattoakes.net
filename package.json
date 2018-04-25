@@ -35,7 +35,7 @@
     "metalsmith-permalinks": "^0.5.0",
     "metalsmith-picset-generate": "^0.0.2",
     "metalsmith-picset-handlebars-helper": "^0.0.2",
-    "metalsmith-redirect": "^2.1.0",
+    "metalsmith-redirect": "https://github.com/matt-oakes/metalsmith-redirect.git#e611d943095b1e774004c0db94eb846d1b9aebac",
     "metalsmith-s3": "^0.1.0",
     "metalsmith-sitemap": "^1.2.0",
     "metalsmith-twitter-card": "^1.0.4",
