@@ -19,11 +19,7 @@ priority: 0.8
                 <p>Fill in your details in the form below to give me an idea of the type of project you would like me to work with you on.</p>
             </div>
             <div class="process-entry">
-                <h3>2. Questionnaire</h3>
-                <p>Within a few minute I will send you a simple 5-minute questionnaire to get a better idea of how I can help you.</p>
-            </div>
-            <div class="process-entry">
-                <h3>3. Phone call</h3>
+                <h3>2. Phone call</h3>
                 <p>If it sounds like we would be a good fit, I will arrange a phone call to discuss the specifics of the project.</p>
             </div>
         </div>
@@ -34,31 +30,28 @@ priority: 0.8
     </scetion>
 
     <section id="contact-form" class="contact-section">
-        <script src="https://assets.convertkit.com/assets/CKJS4.js?v=21"></script>
-        <form action="https://app.convertkit.com/landing_pages/369154/subscribe" data-remote="true">
-            <input type="hidden" value="{&quot;form_style&quot;:&quot;naked&quot;,&quot;converted_behavior&quot;:&quot;show&quot;,&quot;days_no_show&quot;:&quot;15&quot;,&quot;delay_seconds&quot;:&quot;10&quot;,&quot;display_devices&quot;:&quot;all&quot;,&quot;display_position&quot;:&quot;br&quot;,&quot;embed_style&quot;:&quot;inline&quot;,&quot;embed_trigger&quot;:&quot;scroll_percentage&quot;,&quot;scroll_percentage&quot;:&quot;70&quot;}" id="ck_form_options">
-            <input type="hidden" name="id" value="369154" id="landing_page_id">
-            <input type="hidden" name="ck_form_recaptcha" value="" id="ck_form_recaptcha">
+        <form action="https://formcarry.com/s/rk_AxujrG" method="POST" accept-charset="UTF-8">
+            <input type="hidden" name="_gotcha">
             <fieldset>
                 <label for="first_name">First name</label>
                 <input type="text" name="first_name" id="first_name" required>
             </fieldset>
             <fieldset>
-                <label for="ck_field_27439_last_name">Last name</label>
-                <input type="text" name="ck_field_27439_last_name" id="ck_field_27439_last_name" required>
+                <label for="last_name">Last name</label>
+                <input type="text" name="last_name" id="last_name" required>
             </fieldset>
             <fieldset>
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" required>
             </fieldset>
             <fieldset>
-                <label for="ck_field_27440_app_name">App name <small>(optional)</small></label>
-                <input type="text" name="ck_field_27440_app_name" id="ck_field_27440_app_name">
+                <label for="app_name">App name <small>(optional)</small></label>
+                <input type="text" name="app_name" id="app_name">
             </fieldset>
             <fieldset>
-                <label for="ck_field_27441_initial_contact_type">What can I help you with?</label>
+                <label for="initial_contact_type">What can I help you with?</label>
                 <div class="styled-select">
-                    <select name="ck_field_27441_initial_contact_type" id="ck_field_27441_initial_contact_type" required>
+                    <select name="initial_contact_type" id="initial_contact_type" required>
                         <option value="">&nbsp;</option>
                         <option value="new">Building a new app</option>
                         <option value="improve">Improve an existing app or expand to a new platform</option>
@@ -66,12 +59,41 @@ priority: 0.8
                     </select>
                 </div>
             </fieldset>
-            <fieldset class="checkbox">
-                <input type="checkbox" name="ck_field_27512_tips" id="ck_field_27512_tips" value="yes"><label for="ck_field_27512_tips">I would like to receive a monthly email with tips about improving my app</label>
+            <fieldset>
+                <label for="new_type">What best describes the type of project you are looking for me to work on?</label>
+                <div class="styled-select">
+                    <select name="new_type" id="new_type" required>
+                        <option value="">&nbsp;</option>
+                        <option value="roadmapping">Roadmapping for a future app</option>
+                        <option value="mvp">First prototype (MVP)</option>
+                        <option value="production">Production ready app</option>
+                    </select>
+                </div>
             </fieldset>
-            <div style="position: absolute !important;left: -999em !important;">
-              <input type="text" name="captcha2_h" placeholder="We use this field to detect spam bots. If you fill this in, you will be marked as a spammer.">
-            </div>
+            <fieldset>
+                <label for="new_platform">What platforms are you looking for your app to support?</label>
+                <ul class="checkbox-list">
+                    <li><input type="checkbox" name="new_platform_android" id="new_platform_android" value="yes"><label for="new_platform_android">Android</label></li>
+                    <li><input type="checkbox" name="new_platform_ios" id="new_platform_ios" value="yes"><label for="new_platform_ios">iOS</label></li>
+                    <li><input type="checkbox" name="new_platform_web" id="new_platform_web" value="yes"><label for="new_platform_web">Web</label></li>
+                    <li><input type="checkbox" name="new_platform_other" id="new_platform_other" value="yes"><label for="new_platform_other">Other</label></li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <label for="new_project_details">Tell me a bit about what your app will do and who will use it</label>
+                <textarea name="new_project_details" rows="5" required></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="new_project_timelines">What are the timelines for this project? When are you ideally looking for someone to work on the project and do you have a specific deadline that needs to be met?</label>
+                <textarea name="new_project_timelines" rows="5" required></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="new_project_anything_else">Is there anything else that you think it would be useful for me to know before our call? <small>(optional)</small></label>
+                <textarea name="new_project_anything_else" rows="5"></textarea>
+            </fieldset>
+            <fieldset class="checkbox">
+                <input type="checkbox" name="tips" id="tips" value="yes"><label for="tips">I would like to receive a monthly email with tips about improving my app</label>
+            </fieldset>
             <input class="button submit" type="submit" value="Send">
         </form>
     </section>
