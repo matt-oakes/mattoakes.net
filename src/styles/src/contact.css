@@ -25,96 +25,96 @@
         }
     }
 
-    & #contact-form {
-        & fieldset {
-            border-width: 0;
+    & #alt-method {
+        & p {
+            text-align: center;
+        }
+    }
+}
 
-            &.checkbox {
-                margin-bottom: 1rem;
+#contact-form {
+    & fieldset {
+        border-width: 0;
+
+        &.checkbox {
+            margin-bottom: 1rem;
+        }
+
+        & label {
+            font-size: 1.1rem;
+            font-family: var(--headerFontFamily);
+            font-weight: 400;
+            text-rendering: optimizeLegibility;
+            margin-bottom: 0.5rem;
+
+            & small {
+                font-size: 0.8rem;
+                opacity: 0.5;
             }
+        }
 
-            & label {
+        & input:not([type="checkbox"]), & textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            border: 1px solid #DDDDDD;
+            font-size: 1.1rem;
+            color: black;
+
+            &:focus {
+                border-color: var(--brandColor);
+                outline: 0;
+            }
+        }
+
+        & input[type="checkbox"] {
+            font-size: 1.2rem;
+            margin-right: 0.5rem;
+        }
+
+        & .styled-select {
+            width: 100%;
+            overflow: hidden;
+            border: 1px solid #DDDDDD;
+            padding: 0.25rem 0;
+            margin-bottom: 0.5rem;
+
+            & select {
+                background: transparent;
+                border: none;
                 font-size: 1.1rem;
-                font-family: var(--headerFontFamily);
-                font-weight: 400;
-                text-rendering: optimizeLegibility;
-                margin-bottom: 0.5rem;
-
-                & small {
-                    font-size: 0.8rem;
-                    opacity: 0.5;
-                }
-            }
-
-            & input:not([type="checkbox"]), & textarea {
                 width: 100%;
-                padding: 0.5rem;
-                margin-bottom: 0.5rem;
-                border: 1px solid #DDDDDD;
-                font-size: 1.1rem;
                 color: black;
 
                 &:focus {
-                    border-color: var(--brandColor);
                     outline: 0;
                 }
             }
 
-            & input[type="checkbox"] {
-                font-size: 1.2rem;
-                margin-right: 0.5rem;
-            }
-
-            & .styled-select {
-                width: 100%;
-                overflow: hidden;
-                border: 1px solid #DDDDDD;
-                padding: 0.25rem 0;
-                margin-bottom: 0.5rem;
-
-                & select {
-                    background: transparent;
-                    border: none;
-                    font-size: 1.1rem;
-                    width: 100%;
-                    color: black;
-
-                    &:focus {
-                        outline: 0;
-                    }
-                }
-
-                &:focus-within {
-                    border-color: var(--brandColor);
-                }
-            }
-
-            & .checkbox-list {
-                list-style-type: none;
-                margin-left: 1rem;
-
-                & li label {
-                    font-size: 0.9rem;
-                }
+            &:focus-within {
+                border-color: var(--brandColor);
             }
         }
 
-        & .button {
-            margin: 0 auto;
-        }
+        & .checkbox-list {
+            list-style-type: none;
+            margin-left: 1rem;
 
-        & p {
-            text-align: center;
-
-            &.small {
-                font-size: 0.75rem;
+            & li label {
+                font-size: 0.9rem;
             }
         }
     }
 
-    & #alt-method {
-        & p {
-            text-align: center;
+    & .button {
+        margin: 0 auto;
+    }
+
+    & p {
+        text-align: center;
+
+        &.small {
+            font-size: 0.75rem;
         }
     }
 }
@@ -141,11 +141,11 @@
                 lost-column: 1/2;
             }
         }
+    }
 
-        & #contact-form {
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-        }
+    #contact-form {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

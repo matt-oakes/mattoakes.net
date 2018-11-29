@@ -137,7 +137,7 @@ const website = Metalsmith(__dirname)
     require('handlebars').registerHelper('map-collection', (collection) => {
       return _.chain(collection)
         .map(item => ({
-          title: item.guideTitle || item.title,
+          title: item.collectionTitle || item.title,
           brief: getFirstParagraph(item.contents.toString("utf8")),
           url: "/" + (item.path.endsWith(".hbs") ? item.path.slice(0, -4) + "/" : item.path)
         }))
@@ -153,7 +153,7 @@ const website = Metalsmith(__dirname)
     }
   }))
   .use(archive({
-    collections: "guides"
+    collections: ["guides", "training"]
   }))
   // Transform templates in place
   .use(inPlace({ pattern: "**/*" }))
