@@ -35,6 +35,8 @@ const websiteUrlNoProtocol = 'mattoakes.net'
 const redirects = {
   "/react-native/": "/guides/react-native/",
   "/native-development/": "/guides/native-development/",
+  "/go-mobile/": "/services/go-mobile/",
+  "/improve-your-mobile-app/": "/services/improve-your-mobile-app/",
   "/what-information-do-i-need-to-submit-to-the-amazon-app-store-b515bb4d32ee": "/guides/what-information-is-needed-for-an-amazon-app-store-listing/",
   "/what-information-do-i-need-to-submit-to-the-google-play-store-5f261870bab0": "/guides/what-information-is-needed-for-a-google-play-store-listing/",
   "/what-information-do-i-need-to-submit-to-the-apple-app-store-a33ecc38a5ca": "/guides/what-information-is-needed-for-an-apple-app-store-listing/",
