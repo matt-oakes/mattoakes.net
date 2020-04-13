@@ -1,21 +1,25 @@
-machine:
-  node:
-    version: 6.2.2
-  environment:
-    PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
+version: 2.1
 
-dependencies:
-  override:
-    - yarn
-  cache_directories:
-    - ~/.cache/yarn
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8
+    steps:
+      - checkout
+      - run:
+          name: Install
+          command: yarn
+      - run:
+          name: Test
+          command: yarn test
+      - run:
+          name: Deploy
+          command: yarn deploy
 
-test:
-  override:
-    - yarn test
-
-deployment:
-  production:
-    branch: master
-    commands:
-      - yarn run deploy
+workflows:
+  main:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master
