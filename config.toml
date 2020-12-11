@@ -1,6 +1,8 @@
 baseURL = "https://mattoakes.net/"
 languageCode = "en-gb"
 title = "Matt Oakes — Mobile & React Native App Developer in Brighton & London"
-description = "Matt Oakes a mobile app developer in Brighton who helps companies with their mobile strategy and develops Android, iOS & React Native apps."
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "term"]
+
+[params]
+  Description = "Matt Oakes a mobile app developer in Brighton who helps companies with their mobile strategy and develops Android, iOS & React Native apps."
