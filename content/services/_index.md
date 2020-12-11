@@ -1,0 +1,1 @@
+I work with a range of companies, from those who realise they need to "Go Mobile" through to those whoes current mobile presence is underperforming and needs improvement.

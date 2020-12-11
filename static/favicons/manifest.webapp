@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "name": "Matt Oakes",
+  "description": "Matt Oakes a mobile app developer in Brighton who helps companies with their mobile strategy and develops Android, iOS & React Native apps.",
+  "icons": {
+    "60": "/favicons/firefox_app_60x60.png",
+    "128": "/favicons/firefox_app_128x128.png",
+    "512": "/favicons/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": null,
+    "url": null
+  }
+}

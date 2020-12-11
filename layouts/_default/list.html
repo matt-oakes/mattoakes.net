@@ -1,0 +1,22 @@
+{{ define "main" }}
+    <section class="section-index">
+        {{ with .Content }}
+            <header>
+                {{ . }}
+            </header>
+        {{ end }}
+        <div class="row">
+            {{ range .Pages }}
+                <div class="section-index-entry">
+                    <h3>{{ with .Params.SectionTitle }}{{ . }}{{ else }}{{ .Title }}{{ end }}</h3>
+                    <p>{{ .Summary }}</p>
+                    <div class="buttons">
+                        <div class="button"><a href="{{ .RelPermalink }}">
+                            {{ with $.Params.SectionMoreButton }}{{ . }}{{ else }}Learn More{{ end }}
+                        </a></div>
+                    </div>
+                </div>
+            {{ end }}
+        </div>
+    </section>
+{{ end }}
