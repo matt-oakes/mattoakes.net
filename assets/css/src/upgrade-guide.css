@@ -1,0 +1,92 @@
+.react-native-upgrade-index {
+    margin: 2rem 0;
+
+    & header {
+        margin-bottom: 1.3rem;
+    }
+
+    & .react-native-upgrade-index-entry {
+        margin-bottom: 1rem;
+
+        & h3 {
+            font-weight: normal;
+        }
+    }
+}
+
+.react-native-upgrade-callout {
+    width: 100%;
+    max-width: 720px;
+    margin: 1rem auto 2rem auto;
+    padding: 0.75rem;
+    background-color: var(--lightBrandColor);
+    border: 1px solid var(--brandColor);
+    border-radius: 2px;
+
+    & p {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    & .buttons {
+        padding: 0;
+        margin-bottom: 0;
+
+        & div.button {
+            & a {
+                background-color: var(--brandColor);
+                color: white;
+                
+                &:hover {
+                    background-color: transparent;
+                    color: var(--brandColor);
+                }
+            }
+        }
+    }
+}
+
+.react-native-upgrade-entry {
+    width: 100%;
+    padding-bottom: 2rem;
+
+    & h2 {
+        margin-top: 2rem;
+    }
+
+    & h3 {
+        margin-top: 1.5rem;
+    }
+
+    & h4 {
+        font-family: var(--headerFontFamily);
+        font-weight: 400;
+        text-rendering: optimizeLegibility;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        margin-top: 1rem;
+    }
+    
+    & .highlight {
+        width: 100%;
+        overflow-x: auto;
+        margin-bottom: 0.45rem;
+        display: flex;
+        
+        & pre {
+            flex: 1;
+            padding: 0.45rem;
+            margin-bottom: 0;
+            
+            & code {
+                font-size: 0.8rem;
+                line-height: 1rem;
+            }
+        }
+    }
+
+    & p code {
+        background-color:#f8f8f8;
+        padding: 0.1rem;
+    }
+}

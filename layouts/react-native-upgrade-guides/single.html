@@ -1,0 +1,9 @@
+{{ define "main" }}
+    <div class="react-native-upgrade-entry">
+        <h2>{{ with .Params.SectionTitle }}{{ . }}{{ else }}{{ .Title }}{{ end }}</h2>
+
+        {{ .Content }}
+
+        {{- partial "react-native-upgrade-callout.html" . -}}
+    </div>
+{{ end }}
