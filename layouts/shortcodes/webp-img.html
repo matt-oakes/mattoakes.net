@@ -1,4 +1,4 @@
 <picture>
-  <source type="image/webp" src="{{ .Get "src" }}.webp" sizes="(min-width: 900px) calc(900px / 2), 100vw">
+  <source type="image/webp" srcset="{{ .Get "src" }}.webp" sizes="(min-width: 900px) calc(900px / 2), 100vw">
   <img src="{{ .Get "src" }}.{{ with .Get "PNG" }}png{{ else }}jpg{{ end }}" sizes="(min-width: 900px) calc(900px / 2), 100vw" alt="{{ .Get "alt" }}">
 </picture>
