@@ -1,3 +1,17 @@
+# Redirect from old domains
+http://reactnative.thenativebits.com/courses/upgrade-react-native/                          https://mattoakes.net/react-native-upgrade-guides/         301!
+https://reactnative.thenativebits.com/courses/upgrade-react-native/                         https://mattoakes.net/react-native-upgrade-guides/         301!
+http://reactnative.thenativebits.com/courses/upgrading-react-native/*                       https://mattoakes.net/react-native-upgrade-guides/:splat   301!
+https://reactnative.thenativebits.com/courses/upgrading-react-native/*                      https://mattoakes.net/react-native-upgrade-guides/:splat   301!
+http://thenativebits.com/*                                                                  https://mattoakes.net/:splat                               301!
+https://thenativebits.com/*                                                                 https://mattoakes.net/:splat                               301!
+http://www.thenativebits.com/*                                                              https://mattoakes.net/:splat                               301!
+https://www.thenativebits.com/*                                                             https://mattoakes.net/:splat                               301!
+http://reactnative.thenativebits.com/*                                                      https://mattoakes.net/:splat                               301!
+https://reactnative.thenativebits.com/*                                                     https://mattoakes.net/:splat                               301!
+http://articles.mattoakes.net/*                                                             https://mattoakes.net/:splat                               301!
+https://articles.mattoakes.net/*                                                            https://mattoakes.net/:splat                               301!
+
 # Moved page URLs
 /react-native/                                                                              /guides/react-native/
 /native-development/                                                                        /guides/native-development/
