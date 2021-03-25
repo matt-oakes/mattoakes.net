@@ -1,3 +1,10 @@
+{{ $fonts := resources.Get "css/fonts.css" | resources.PostCSS }}
+{{ if eq hugo.Environment "production" }}
+{{ .Scratch.Set "fonts" ($fonts | resources.Minify | resources.Fingerprint "sha512") }}
+{{ else }}
+{{ .Scratch.Set "fonts" ($fonts | resources.Fingerprint "sha512") }}
+{{ end }}
+
 {{ $options := (dict "outputStyle" "compressed") }}
 {{ $styles := resources.Get "css/styles.css" | resources.PostCSS }}
 {{ if eq hugo.Environment "production" }}
@@ -11,10 +18,8 @@
   <title>
     {{ .Title }}
   </title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
 
+  <link rel="stylesheet" href='{{ (.Scratch.Get "fonts").RelPermalink }}' integrity='{{ (.Scratch.Get "fonts").Data.Integrity }}'>
   <link rel="stylesheet" href='{{ (.Scratch.Get "styles").RelPermalink }}' integrity='{{ (.Scratch.Get "styles").Data.Integrity }}'>
   <link rel="canonical" href="{{ .Permalink }}">
   {{ partial "meta.html" . }}

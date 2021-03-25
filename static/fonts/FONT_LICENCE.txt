@@ -1,0 +1,4 @@
+Alegreya: Copyright 2011 The Alegreya Project Authors (https://github.com/huertatipografica/Alegreya)
+Alegreya Italic: Copyright 2011 The Alegreya Project Authors (https://github.com/huertatipografica/Alegreya)
+Alegreya Sans: Copyright 2011 The Alegreya Project Authors (https://github.com/huertatipografica/Alegreya)
+Alegreya Sans Italic: Copyright 2011 The Alegreya Project Authors (https://github.com/huertatipografica/Alegreya)
