@@ -1,4 +1,18 @@
+{{ .Scratch.Set "src" (.Get "src") }}
+{{ .Scratch.Set "alt" (.Get "alt") }}
+
 <picture>
-  <source type="image/webp" srcset="{{ .Get "src" }}.webp" sizes="(min-width: 900px) calc(900px / 2), 100vw">
-  <img src="{{ .Get "src" }}.{{ with .Get "PNG" }}png{{ else }}jpg{{ end }}" sizes="(min-width: 900px) calc(900px / 2), 100vw" alt="{{ .Get "alt" }}">
+  {{ .Scratch.Set "webpPath" (printf "%s.webp" (.Scratch.Get "src")) }}
+  {{ $webp := resources.Get (.Scratch.Get "webpPath") | resources.Fingerprint "sha512" }}
+  <source type="image/webp" srcset="{{ $webp.Permalink }}" integrity="{{ $webp.Data.Integrity }}" sizes="(min-width: 900px) calc(900px / 2), 100vw">
+
+  {{ if (.Get "PNG") }}
+    {{ .Scratch.Set "pngPath" (printf "%s.png" (.Scratch.Get "src")) }}
+    {{ $png := resources.Get (.Scratch.Get "pngPath") | resources.Fingerprint "sha512" }}
+    <img src="{{ $png.Permalink }}" integrity="{{ $png.Data.Integrity }}" sizes="(min-width: 900px) calc(900px / 2), 100vw" alt="{{ .Scratch.Get "alt" }}">
+    {{ else }}
+    {{ .Scratch.Set "jpgPath" (printf "%s.jpg" (.Scratch.Get "src")) }}
+    {{ $jpg := resources.Get (.Scratch.Get "jpgPath") | resources.Fingerprint "sha512" }}
+    <img src="{{ $jpg.Permalink }}" integrity="{{ $jpg.Data.Integrity }}" sizes="(min-width: 900px) calc(900px / 2), 100vw" alt="{{ .Scratch.Get "alt" }}">
+  {{ end }}
 </picture>
