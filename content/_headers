@@ -1,0 +1,14 @@
+/css/*
+  cache-control: public
+  cache-control: max-age=31536000
+  cache-control: immutable
+
+/favicons/*
+  cache-control: public
+  cache-control: max-age=31536000
+  cache-control: immutable
+
+/img/*
+  cache-control: public
+  cache-control: max-age=31536000
+  cache-control: immutable
