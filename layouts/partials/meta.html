@@ -3,23 +3,37 @@
 
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
 
-<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+{{ $icon57 := resources.Get "favicons/apple-touch-icon-57x57.png" | resources.Fingerprint "sha512" }}
+<link rel="apple-touch-icon" sizes="57x57" href="{{ $icon57.Permalink }}" integrity="{{ $icon57.Data.Integrity }}">
+{{ $icon60 := resources.Get "favicons/apple-touch-icon-60x60.png" | resources.Fingerprint "sha512" }}
+<link rel="apple-touch-icon" sizes="60x60" href="{{ $icon60.Permalink }}" integrity="{{ $icon60.Data.Integrity }}">
+{{ $icon72 := resources.Get "favicons/apple-touch-icon-72x72.png" | resources.Fingerprint "sha512" }}
+<link rel="apple-touch-icon" sizes="72x72" href="{{ $icon72.Permalink }}" integrity="{{ $icon72.Data.Integrity }}">
+{{ $icon76 := resources.Get "favicons/apple-touch-icon-76x76.png" | resources.Fingerprint "sha512" }}
+<link rel="apple-touch-icon" sizes="76x76" href="{{ $icon76.Permalink }}" integrity="{{ $icon76.Data.Integrity }}">
+{{ $icon11 := resources.Get "favicons/apple-touch-icon-114x114.png" | resources.Fingerprint "sha512" }}
+<link rel="apple-touch-icon" sizes="114x114" href="{{ $icon11.Permalink }}" integrity="{{ $icon11.Data.Integrity }}">
+{{ $icon12 := resources.Get "favicons/apple-touch-icon-120x120.png" | resources.Fingerprint "sha512" }}
+<link rel="apple-touch-icon" sizes="120x120" href="{{ $icon12.Permalink }}" integrity="{{ $icon12.Data.Integrity }}">
+{{ $icon14 := resources.Get "favicons/apple-touch-icon-144x144.png" | resources.Fingerprint "sha512" }}
+<link rel="apple-touch-icon" sizes="144x144" href="{{ $icon14.Permalink }}" integrity="{{ $icon14.Data.Integrity }}">
+{{ $icon15 := resources.Get "favicons/apple-touch-icon-152x152.png" | resources.Fingerprint "sha512" }}
+<link rel="apple-touch-icon" sizes="152x152" href="{{ $icon15.Permalink }}" integrity="{{ $icon15.Data.Integrity }}">
+{{ $icon18 := resources.Get "favicons/apple-touch-icon-180x180.png" | resources.Fingerprint "sha512" }}
+<link rel="apple-touch-icon" sizes="180x180" href="{{ $icon18.Permalink }}" integrity="{{ $icon18.Data.Integrity }}">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="{{ .Title }}">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-<link rel="shortcut icon" href=/favicons/favicon.ico>
-<link rel="manifest" href="/favicons/manifest.json">
+{{ $icon32 := resources.Get "favicons/favicon-32x32.png" | resources.Fingerprint "sha512" }}
+<link rel="icon" type="image/png" sizes="32x32" href="{{ $icon32.Permalink }}" integrity="{{ $icon32.Data.Integrity }}">
+{{ $icon19 := resources.Get "favicons/android-chrome-192x192.png" | resources.Fingerprint "sha512" }}
+<link rel="icon" type="image/png" sizes="192x192" href="{{ $icon19.Permalink }}" integrity="{{ $icon19.Data.Integrity }}">
+{{ $icon16 := resources.Get "favicons/favicon-16x16.png" | resources.Fingerprint "sha512" }}
+<link rel="icon" type="image/png" sizes="16x16" href="{{ $icon16.Permalink }}" integrity="{{ $icon16.Data.Integrity }}">
+{{ $ico := resources.Get "favicons/favicon.ico" | resources.Fingerprint "sha512" }}
+<link rel="shortcut icon" href="{{ $ico.Permalink }}" integrity="{{ $ico.Data.Integrity }}">
+{{ $manifest := resources.Get "favicons/manifest.json" | resources.Fingerprint "sha512" }}
+<link rel="manifest" href="{{ $manifest.Permalink }}" integrity="{{ $manifest.Data.Integrity }}">
 
 {{ template "_internal/opengraph.html" . }}
 
